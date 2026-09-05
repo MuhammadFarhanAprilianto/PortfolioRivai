@@ -1,0 +1,633 @@
+{
+  "meta": {
+    "siteTitle": "Portfolio - Muhamad Rivai",
+    "version": "1.0.0",
+    "updatedAt": "2026-09-05"
+  },
+  "nav": {
+    "logoImage": "/assets/Logo Web.webp",
+    "logoText": "Muhamad Rivai",
+    "links": [
+      {
+        "id": "about",
+        "en": "ABOUT",
+        "id_lang": "TENTANG"
+      },
+      {
+        "id": "skills",
+        "en": "EXPERTISE",
+        "id_lang": "KEAHLIAN"
+      },
+      {
+        "id": "projects",
+        "en": "PROJECTS",
+        "id_lang": "PORTOFOLIO"
+      },
+      {
+        "id": "experience",
+        "en": "EXPERIENCE",
+        "id_lang": "PENGALAMAN"
+      },
+      {
+        "id": "certificates",
+        "en": "CERTIFICATES",
+        "id_lang": "SERTIFIKASI"
+      },
+      {
+        "id": "contact",
+        "en": "CONTACT",
+        "id_lang": "KONTAK"
+      }
+    ],
+    "resumeButtonText": {
+      "en": "Download CV",
+      "id_lang": "Unduh CV"
+    },
+    "resumeUrl": "/CV - Muhamad Rivai .pdf"
+  },
+  "hero": {
+    "headline": {
+      "en": "Quality Control, Welder 3G SMAW, Store Leader & Marketing, Visual Communication Designer.",
+      "id_lang": "Quality Control, Welder 3G SMAW, Leader & Marketing Store & Desainer Komunikasi Visual."
+    },
+    "subheadline": {
+      "en": "Bachelor of Visual Communication Design graduate from Universitas Indraprasta PGRI, combining photography and videography skills with industrial technical precision. Driven by strong career enthusiasm to contribute across manufacturing, construction, and mining industries, backed by certified competencies in Quality Control (QC) and 3G SMAW Plate Welding.",
+      "id_lang": "Lulusan S1 Desain Komunikasi Visual dari Universitas Indraprasta PGRI yang memadukan keahlian fotografi dan videografi dengan ketelitian teknis lapangan. Memiliki minat kerja dan komitmen tinggi untuk berkarier di industri manufaktur, konstruksi, maupun pertambangan, didukung oleh kompetensi bersertifikasi resmi dalam Quality Control (QC) serta Pengelasan Plat 3G SMAW."
+    },
+    "badge": {
+      "en": "AVAILABLE FOR NEW OPPORTUNITIES",
+      "id_lang": "SIAP MENGHADAPI TANTANGAN BARU"
+    }
+  },
+  "profile": {
+    "name": "Muhamad Rivai",
+    "avatar": "/assets/Foto-Profile-1.webp",
+    "heroAvatar": "/assets/Foto-Profile-1.webp",
+    "cardAvatar": "/assets/Foto-Profile-2.webp",
+    "role": {
+      "en": "Quality Control | Welder 3G SMAW | Store Leader & Marketing | Visual Communication Designer",
+      "id_lang": "Quality Control | Welder 3G SMAW | Leader & Marketing Store | Desainer Komunikasi Visual"
+    },
+    "bio": {
+      "en": "INDUSTRIAL CRAFT & VISUAL IDENTITY",
+      "id_lang": "KEAHLIAN INDUSTRI & IDENTITAS VISUAL"
+    },
+    "summary": {
+      "en": "Multi-disciplinary professional holding a Bachelor of Visual Communication Design from Universitas Indraprasta PGRI, combining creative photography and videography skills with industrial technical precision. Driven by high career interest and dedication to contribute to companies operating in the manufacturing, construction, and mining sectors. Backed by official certifications in Quality Control (QC) inspection and BNSP-certified fabrication welding (Plate Welder 3G SMAW). Proven track record as a Store Leader & Marketing specialist in managing retail branch operations from ground zero, executing marketing strategies, achieving daily sales revenue up to IDR 100 Million, inventory control, and financial administration. Highly disciplined in utilizing precision measurement tools, skilled in various cutting tool techniques, blueprint drawing analysis, visual defect identification, and repairs adhering to American Welding Society (AWS) standards and Welding Procedure Specification (WPS), with strict compliance to 5R/5S and K3 occupational safety standards to deliver optimal operational excellence.",
+      "id_lang": "Profesional multi-disiplin lulusan S1 Desain Komunikasi Visual Universitas Indraprasta PGRI yang memadukan keahlian fotografi dan videografi kreatif dengan ketelitian teknis industri. Memiliki minat kerja dan komitmen karier yang tinggi pada perusahaan yang bergerak di bidang manufaktur, konstruksi, serta pertambangan. Memiliki kompetensi teknis bersertifikasi resmi dalam Quality Control (QC) serta keahlian fabrikasi pengelasan BNSP (Plate Welder 3G SMAW). Berpengalaman sebagai Leader & Marketing Store dalam memimpin operasional cabang retail dari nol, merancang strategi pemasaran, hingga mencetak omzet harian mencapai Rp100 Juta, pengelolaan inventaris, dan administrasi keuangan. Terbiasa bekerja efisien dengan disiplin tinggi, penguasaan alat ukur presisi teknik, terampil dalam penggunaan berbagai teknik alat pemotongan, pembacaan gambar kerja (drawing), identifikasi cacat secara visual serta melakukan perbaikan sesuai pedoman standar American Welding Society (AWS) dan Welding Procedure Specification (WPS), didukung kepatuhan penuh terhadap budaya kerja 5R/5S dan Keselamatan & Kesehatan Kerja (K3) untuk memberikan hasil dan efisiensi operasional terbaik bagi perusahaan."
+    },
+    "location": "Jakarta, Indonesia",
+    "phone": "+62 896-2267-1182",
+    "email": "mrpai267@gmail.com",
+    "whatsapp": "https://wa.me/6289622671182",
+    "linkedin": "https://www.linkedin.com/in/muhamad-rivai-985662290/",
+    "instagram": "https://www.instagram.com/painull",
+    "tiktok": "https://tiktok.com"
+  },
+  "stats": [
+    {
+      "value": "6+",
+      "label": {
+        "en": "Work Experience",
+        "id_lang": "Pengalaman Kerja"
+      }
+    },
+    {
+      "value": "100Jt+",
+      "label": {
+        "en": "Pstore Sales Target",
+        "id_lang": "Target Omzet Pstore"
+      }
+    },
+    {
+      "value": "6+",
+      "label": {
+        "en": "Official BNSP Licenses",
+        "id_lang": "Sertifikasi & BNSP"
+      }
+    },
+    {
+      "value": "100%",
+      "label": {
+        "en": "QC & K3 Compliance",
+        "id_lang": "Kepatuhan QC & K3"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "Adobe Illustrator",
+      "category": { "en": "Creative Design", "id_lang": "Desain Kreatif" },
+      "level": { "en": "Advanced", "id_lang": "Mahir" }
+    },
+    {
+      "name": "Adobe Premiere Pro",
+      "category": { "en": "Video Production", "id_lang": "Produksi Video" },
+      "level": { "en": "Advanced", "id_lang": "Mahir" }
+    },
+    {
+      "name": "Capcut Pro",
+      "category": { "en": "Video Editing", "id_lang": "Pengeditan Video" },
+      "level": { "en": "Advanced", "id_lang": "Mahir" }
+    },
+    {
+      "name": "Canva",
+      "category": { "en": "Social Media Design", "id_lang": "Desain Media Sosial" },
+      "level": { "en": "Advanced", "id_lang": "Mahir" }
+    },
+    {
+      "name": "Quality Control (QC)",
+      "category": { "en": "Industrial Precision", "id_lang": "Presisi Industri" },
+      "level": { "en": "Certified", "id_lang": "Tersertifikasi" }
+    },
+    {
+      "name": "Go/No-Go Gauge",
+      "category": { "en": "Measurement Tools", "id_lang": "Alat Ukur Presisi" },
+      "level": { "en": "Expert", "id_lang": "Ahli" }
+    },
+    {
+      "name": "Feeler Gauge",
+      "category": { "en": "Measurement Tools", "id_lang": "Alat Ukur Presisi" },
+      "level": { "en": "Expert", "id_lang": "Ahli" }
+    },
+    {
+      "name": "Caliper / Jangka Sorong",
+      "category": { "en": "Measurement Tools", "id_lang": "Alat Ukur Presisi" },
+      "level": { "en": "Expert", "id_lang": "Ahli" }
+    },
+    {
+      "name": "Welder 3G SMAW (AWS)",
+      "category": { "en": "Industrial Welding", "id_lang": "Pengelasan Industri" },
+      "level": { "en": "BNSP Certified", "id_lang": "Sertifikasi BNSP" }
+    },
+    {
+      "name": "Welder GMAW",
+      "category": { "en": "Industrial Welding", "id_lang": "Pengelasan Industri" },
+      "level": { "en": "Beginner", "id_lang": "Pemula" }
+    },
+    {
+      "name": "Welder Robotics",
+      "category": { "en": "Robotic Welding", "id_lang": "Pengelasan Robotik" },
+      "level": { "en": "Beginner", "id_lang": "Pemula" }
+    },
+    {
+      "name": "K3 & 5R/5S Safety",
+      "category": { "en": "Workplace Safety", "id_lang": "Keselamatan Kerja" },
+      "level": { "en": "Standard Certified", "id_lang": "Standar Resmi" }
+    },
+    {
+      "name": "Drawing / Gambar Teknik",
+      "category": { "en": "Technical Blueprint", "id_lang": "Gambar Teknik" },
+      "level": { "en": "Proficient", "id_lang": "Terampil" }
+    },
+    {
+      "name": "Oxy-Fuel & Blender Cut",
+      "category": { "en": "Fabrication", "id_lang": "Fabrikasi Logam" },
+      "level": { "en": "Proficient", "id_lang": "Terampil" }
+    },
+    {
+      "name": "Store Branch Leadership",
+      "category": { "en": "Management", "id_lang": "Manajemen Toko" },
+      "level": { "en": "Experienced", "id_lang": "Berpengalaman" }
+    },
+    {
+      "name": "Social Media Strategy",
+      "category": { "en": "Marketing", "id_lang": "Pemasaran & Konten" },
+      "level": { "en": "Experienced", "id_lang": "Berpengalaman" }
+    },
+    {
+      "name": "Photography & Video",
+      "category": { "en": "Creative Media", "id_lang": "Media Kreatif" },
+      "level": { "en": "Advanced", "id_lang": "Mahir" }
+    },
+    {
+      "name": "Microsoft Office Suite",
+      "category": { "en": "Administration", "id_lang": "Administrasi" },
+      "level": { "en": "Proficient", "id_lang": "Terampil" }
+    }
+  ],
+  "services": [
+    {
+      "id": "visual-design",
+      "title": {
+        "en": "Visual Communication & Content",
+        "id_lang": "Desain Komunikasi Visual & Konten"
+      },
+      "description": {
+        "en": "End-to-end creative visual assets, branding materials, promotional graphic design, and high-impact social media content tailored for audience engagement.",
+        "id_lang": "Pembuatan materi visual kreatif, materi promosi, branding grafis, serta konten media sosial interaktif berdaya tarik visual tinggi."
+      },
+      "tags": ["Adobe Illustrator", "Canva", "Branding", "Social Media"],
+      "stat": "100+ Assets"
+    },
+    {
+      "id": "video-production",
+      "title": {
+        "en": "Video Editing & Documentation",
+        "id_lang": "Produksi Video & Dokumentasi Event"
+      },
+      "description": {
+        "en": "Professional video storytelling, commercial TikTok/Reels production, corporate event documentation, and documentary YouTube videos.",
+        "id_lang": "Pengeditan video profesional, produksi video TikTok/Reels komersial, dokumentasi event skala besar, dan dokumenter YouTube informatif."
+      },
+      "tags": ["Adobe Premiere", "Capcut", "Videography", "Storytelling"],
+      "stat": "50+ Videos"
+    },
+    {
+      "id": "quality-control",
+      "title": {
+        "en": "Automotive Component Quality Control",
+        "id_lang": "Quality Control Komponen Otomotif"
+      },
+      "description": {
+        "en": "Rigorous manufacturing quality inspection, defect identification, precision gauge measurement (Go/No-Go, Feeler, Caliper), and strict K3 compliance.",
+        "id_lang": "Inspeksi kualitas manufaktur pabrik, identifikasi cacat pengelasan, pengukuran presisi alat ukur teknik, serta penerapan budaya 5R dan K3."
+      },
+      "tags": ["Quality Assurance", "Go/No-Go", "Feeler Gauge", "K3 & 5S"],
+      "stat": "0 Defect Goal"
+    },
+    {
+      "id": "welding-industrial",
+      "title": {
+        "en": "Plate Welder 3G SMAW (AWS)",
+        "id_lang": "Pengelasan Plat 3G SMAW (Standar AWS)"
+      },
+      "description": {
+        "en": "Certified AWS standard welding for plate positions 1F to 3F fillet joints and 1G to 3G groove joints using Shielded Metal Arc Welding and oxy-fuel cutting.",
+        "id_lang": "Keahlian pengelasan standar American Welding Society (AWS) untuk sambungan fillet 1F-3F dan kampuh 1G-3G SMAW serta pemotongan oxy-fuel."
+      },
+      "tags": ["BNSP Certified", "SMAW 3G", "Oxy-Fuel Cutting", "WPS Standards"],
+      "stat": "BNSP 2026"
+    },
+    {
+      "id": "branch-management",
+      "title": {
+        "en": "Store Leadership & Operations",
+        "id_lang": "Kepemimpinan Cabang & Manajemen Toko"
+      },
+      "description": {
+        "en": "Proven capability in building new branch stores from the ground up, managing daily store operations, driving marketing campaigns, and hitting high sales targets.",
+        "id_lang": "Membangun dan mengelola cabang toko dari nol, memimpin tim operasional harian, menjalin relasi publik/influencer, serta mencapai target omzet tinggi."
+      },
+      "tags": ["Branch Leader", "Sales Strategy", "Team Management", "Omnichannel"],
+      "stat": "Rp 100Jt Target"
+    },
+    {
+      "id": "sales-marketing",
+      "title": {
+        "en": "Sales Marketing & Inventory Management",
+        "id_lang": "Sales Marketing & Manajemen Inventaris"
+      },
+      "description": {
+        "en": "Organizing and managing project inventory, managing sales turnover and financial administration, overseeing budget guidelines, customer engagement, and promotional media content.",
+        "id_lang": "Mengorganisir inventaris berbagai proyek, mengelola omset penjualan dan administrasi keuangan, mengawasi kepatuhan anggaran, relasi pelanggan, serta materi promosi media sosial."
+      },
+      "tags": ["Sales Marketing", "Inventory Control", "Financial Admin", "Client Relations"],
+      "stat": "1+ Tahun"
+    }
+  ],
+  "projects": [
+    {
+      "id": "quality-control-futaba",
+      "title": {
+        "en": "Automotive Component Quality Control",
+        "id_lang": "Quality Control Komponen Otomotif"
+      },
+      "category": "Industrial Manufacturing",
+      "year": "2026 - Present",
+      "description": {
+        "en": "Implemented daily 5R/5S workplace discipline and strict K3 occupational safety in factory environments. Conducted rigorous QC inspections on exhaust production lines using precision Go/No-Go gauges, feeler gauges, and calipers, minimizing Not Good (NG) rates through blueprint drawing analysis.",
+        "id_lang": "Menerapkan budaya kerja 5R/5S dan keselamatan K3 di area pabrik, melakukan Quality Control hasil produksi knalpot dengan Go/No-Go Gauge, Feeler Gauge, dan jangka sorong untuk meminimalkan produk NG berdasarkan gambar teknik kerja."
+      },
+      "tags": ["Quality Control", "5R / 5S Culture", "Go/No-Go Gauge", "Caliper Measurement"],
+      "role": "Quality Control",
+      "company": "PT. Komponen Futaba Nusapersada",
+      "image": "/assets/Nusapersada.webp"
+    },
+    {
+      "id": "welder-3g-industrial",
+      "title": {
+        "en": "3G SMAW Plate Welding & Fabrication Project",
+        "id_lang": "Fabrikasi & Pengelasan Plat 3G SMAW Standar AWS"
+      },
+      "category": "Industrial Manufacturing",
+      "year": "2026",
+      "description": {
+        "en": "Executed rigorous plate welding positions 1F, 2F, 3F fillet joints and 1G, 2G, 3G groove joints in accordance with American Welding Society (AWS) standards. Mastered oxy-fuel and blender cutting machines, visual defect inspection, and repair adhering to Welding Procedure Specifications (WPS).",
+        "id_lang": "Melakukan pekerjaan pengelasan posisi 1F, 2F, 3F fillet dan 1G, 2G, 3G groove joint dengan metode Shielded Metal Arc Welding (SMAW) sesuai standar AWS, pengoperasian mesin potong blender & oxy-fuel, serta perbaikan cacat las sesuai WPS."
+      },
+      "tags": ["Welding 3G SMAW", "AWS Standard", "Oxy-Fuel Cutting", "WPS Adherence"],
+      "role": "Welder Plat 3G SMAW",
+      "company": "PPKD Jakarta Timur",
+      "image": "/assets/PPKD.webp"
+    },
+    {
+      "id": "hyrox-jakarta-crew",
+      "title": {
+        "en": "Hyrox Jakarta International Event Crew & Shopkeeper",
+        "id_lang": "Operasional & Crew Shopkeeper Event Hyrox Jakarta"
+      },
+      "category": "Retail Leadership & Growth",
+      "year": "Juni 2026",
+      "description": {
+        "en": "Managed merchandise store logistics, official apparel sales, inventory stock control, and international visitor assistance for the prestigious Hyrox Jakarta fitness racing championship.",
+        "id_lang": "Bertanggung jawab atas manajemen operasional toko merchandise resmi, inventaris produk, layanan pelanggan ribuan peserta race fitness internasional Hyrox Jakarta 2026, serta koordinasi alur pengunjung dan logistik event."
+      },
+      "tags": ["Event Operations", "Hyrox Jakarta", "Merchandise Shopkeeper", "Crowd Coordination"],
+      "role": "Crew Shopkeeper",
+      "company": "Hyrox Jakarta",
+      "image": "/assets/HYROX.webp"
+    },
+    {
+      "id": "pstore-tarakan",
+      "title": {
+        "en": "Pstore Tarakan Branch Leader & Retail Operations",
+        "id_lang": "Leader Cabang Pstore Tarakan & Operasional Toko"
+      },
+      "category": "Retail Leadership & Growth",
+      "year": "2025",
+      "description": {
+        "en": "Assigned to build and launch the Pstore Tarakan branch in North Kalimantan from ground zero. Responsible for full daily operations, driving promotional campaigns with local media and regional public figures, managing social media channels, and hitting daily sales targets up to IDR 100,000,000.",
+        "id_lang": "Membangun dan membuka cabang Pstore baru dari nol di Tarakan, Kalimantan Utara. Bertanggung jawab penuh atas operasional harian, strategi promosi dengan media lokal & public figure, pengelolaan media sosial, serta pencapaian target omzet harian hingga Rp100.000.000."
+      },
+      "tags": ["Store Leadership", "Public Relations", "Sales Marketing", "Social Media Growth"],
+      "role": "Leader Store",
+      "company": "PT. Putra Siregar Merakyat",
+      "image": "/assets/Tarakan.webp"
+    },
+    {
+      "id": "kimia-farma-culture",
+      "title": {
+        "en": "Kimia Farma Creative Media & People Experience",
+        "id_lang": "Kimia Farma Konten Media Kreatif & People Experience"
+      },
+      "category": "Visual Design & Video Production",
+      "year": "2024",
+      "description": {
+        "en": "Produced creative viral TikTok video content on CeritaPharmacytizen, designed engaging promotional graphics for Instagram Genbi_KFA, documented corporate events including Pharmacist Training and Kimia Farma Group Mengajar 2024, and executed professional photoshoots of employees in workplace uniform.",
+        "id_lang": "Membuat video konten TikTok CeritaPharmacytizen, merancang desain grafis Instagram Genbi_KFA, mengambil dokumentasi foto/video karyawan berseragam di berbagai lokasi, serta tim dokumentasi acara Pharmacist Training dan Kimia Farma Group Mengajar 2024."
+      },
+      "tags": ["TikTok Content", "Instagram Design", "Corporate Videography", "Adobe Premiere"],
+      "role": "Pelaksana Culture & People Experience",
+      "company": "PT. Kimia Farma Apotek",
+      "image": "/assets/Kimia-Farma.webp"
+    },
+    {
+      "id": "pstore-depok-sales",
+      "title": {
+        "en": "Sales Marketing & Inventory Operations",
+        "id_lang": "Sales Marketing & Manajemen Inventaris"
+      },
+      "category": "Retail Leadership & Growth",
+      "year": "2022 - 2023",
+      "description": {
+        "en": "Organized and managed inventory for multiple retail projects, handled financial administration and sales turnover management, supervised budget allocation compliance, engaged actively with customers to foster strong client loyalty, and crafted creative social media promotional assets to drive revenue growth.",
+        "id_lang": "Memiliki pengalaman dalam mengorganisir dan mengelola inventaris proyek, mengelola omset penjualan dan pencatatan administrasi keuangan, mengawasi implementasi aturan penggunaan dana kegiatan sesuai anggaran, membangun komunikasi dan relasi kuat dengan pelanggan, serta merancang konten promosi media sosial untuk menarik pelanggan dan meningkatkan penjualan."
+      },
+      "tags": ["Sales Marketing", "Inventory Control", "Financial Admin", "Social Media"],
+      "role": "Sales Marketing",
+      "company": "PT. Putra Siregar Merakyat",
+      "image": "/assets/Sales.webp"
+    },
+    {
+      "id": "bkkbn-documentary",
+      "title": {
+        "en": "BKKBN Dithanlan Documentary & Graphic Assets",
+        "id_lang": "BKKBN Video Dokumenter Dithanlan & Desain Visual"
+      },
+      "category": "Visual Design & Video Production",
+      "year": "2021",
+      "description": {
+        "en": "Produced and edited documentary video content for the Dithanlan YouTube channel, created engaging social media branding graphics, summarized executive Zoom meeting minutes, and accompanied official government delegations to the Mayor of Depok.",
+        "id_lang": "Membuat video dokumenter di channel YouTube Dithanlan, merancang desain grafis media sosial yang menarik dan sesuai branding institusi, menyusun rangkuman notulen rapat Zoom harian, dan mengikuti dinas harian ke Walikota Depok."
+      },
+      "tags": ["Documentary Video", "Branding Design", "Executive Minutes", "Government Media"],
+      "role": "Praktek Kerja Lapangan (PKL)",
+      "company": "Badan Kependudukan dan Keluarga Berencana Nasional",
+      "image": "/assets/BKKBN.webp"
+    }
+  ],
+  "experience": [
+    {
+      "period": "06 Juli 2026 - Present",
+      "role": {
+        "en": "Quality Control (QC)",
+        "id_lang": "Quality Control (QC)"
+      },
+      "company": "PT. Komponen Futaba Nusapersada",
+      "location": "Jakarta, Indonesia",
+      "type": "Manufacturing / Industrial",
+      "highlights": [
+        "Menerapkan budaya 5R/5S di lingkungan pabrik selama melaksanakan pekerjaan guna menciptakan area kerja aman, bersih, dan rapih.",
+        "Memahami dan berkomitmen untuk menerapkan prosedur Keselamatan dan Kesehatan Kerja (K3) dalam pekerjaan.",
+        "Melakukan Quality Control (QC) terhadap hasil produksi untuk memastikan produksi memenuhi standar dan meminimalkan terjadinya produksi Not Good (NG).",
+        "Terampil dalam penggunaan berbagai alat ukur teknik dengan menggunakan Go/No-Go Gauge, pengukur celah baja (Feeler Gauge), dan jangka sorong (Caliper).",
+        "Mampu membaca dan memahami gambar kerja (Drawing) dan mengidentifikasi cacat hasil pengelasan pada knalpot secara visual."
+      ]
+    },
+    {
+      "period": "06 April 2026 - 19 Juni 2026",
+      "role": {
+        "en": "Welder Plat 3G SMAW",
+        "id_lang": "Welder Plat 3G SMAW"
+      },
+      "company": "PPKD Jakarta Timur",
+      "location": "Jakarta, Indonesia",
+      "type": "Vocational & Industrial Welding",
+      "highlights": [
+        "Mempelajari materi soft skill tentang pengelasan sesuai standar American Welding Society (AWS) untuk memastikan hasil las berkualitas tinggi.",
+        "Memahami dan berkomitmen untuk menerapkan prosedur Keselamatan dan Kesehatan Kerja (K3) dalam pekerjaan pengelasan serta menerapkan kerja 5R di area kerja.",
+        "Menguasai teknik pengelasan posisi plat 1F, 2F, 3F sambungan fillet (plate to plate) dan sambungan kampuh (groove joint) 1G, 2G, 3G menggunakan metode Shielded Metal Arc Welding (SMAW).",
+        "Terampil dalam penggunaan berbagai alat pemotongan dengan mesin potong blender, mesin potong oxy-fuel (Oksigen dan Asetilen), dan mesin gerinda tangan.",
+        "Mampu membaca gambar teknik, mengidentifikasi cacat secara visual dan melakukan perbaikan sesuai Welding Procedure Specification (WPS)."
+      ]
+    },
+    {
+      "period": "20 Januari 2025 - 20 Juli 2025",
+      "role": {
+        "en": "Leader Store",
+        "id_lang": "Leader Store"
+      },
+      "company": "PT. Putra Siregar Merakyat",
+      "location": "Tarakan, Kalimantan Utara, Indonesia",
+      "type": "Retail & Operations Management",
+      "highlights": [
+        "Ditugaskan membuka dan membangun cabang Pstore dari nol di Tarakan, Kalimantan Utara, dengan memanfaatkan kekuatan brand nasional yang sudah dikenal luas.",
+        "Bertanggung jawab penuh atas pengelolaan operasional harian cabang, termasuk pencapaian target penjualan harian hingga Rp100.000.000.",
+        "Mengembangkan strategi promosi dan pemasaran dengan menggandeng media lokal dan selebritas daerah untuk meningkatkan eksposur dan penjualan.",
+        "Membangun serta menjaga hubungan baik dengan berbagai kalangan, termasuk komunitas lokal, instansi pemerintah, dan pelaku bisnis.",
+        "Mengelola akun media sosial (Instagram dan TikTok) secara aktif untuk meningkatkan engagement, awareness, dan penjualan melalui konten kreatif dan interaktif."
+      ]
+    },
+    {
+      "period": "17 Mei 2024 - 23 Agustus 2024",
+      "role": {
+        "en": "Pelaksana Culture & People Experience",
+        "id_lang": "Pelaksana Culture & People Experience"
+      },
+      "company": "PT. Kimia Farma Apotek",
+      "location": "Jakarta, Indonesia",
+      "type": "Human Capital & Creative Media",
+      "highlights": [
+        "Membuat video konten di TikTok CeritaPharmacytizen, mengasah kemampuan dalam produksi video, pengeditan, dan storytelling visual.",
+        "Membuat desain grafis di Instagram Genbi_KFA, yang melibatkan pembuatan konten visual yang menarik dengan perangkat lunak desain grafis.",
+        "Mengambil foto dan video karyawan dalam seragam kerja Kimia Farma Apotek di berbagai lokasi, memastikan pencahayaan yang tepat dan pengaturan kamera optimal.",
+        "Menjadi bagian dari tim dokumentasi dalam acara 'Pharmacist Training: Elevating Standards of Practice in Pharmaceutical Service' dan 'Kimia Farma Group Mengajar 2024'."
+      ]
+    },
+    {
+      "period": "25 Februari 2022 - 03 Maret 2023",
+      "role": {
+        "en": "Sales Marketing",
+        "id_lang": "Sales Marketing"
+      },
+      "company": "PT. Putra Siregar Merakyat",
+      "location": "Depok, Indonesia",
+      "type": "Retail & Sales Operations",
+      "highlights": [
+        "Memiliki pengalaman dalam mengorganisir dan mengelola inventaris untuk berbagai proyek, memastikan semua barang tercatat dan disimpan dengan benar.",
+        "Mengelola omset penjualan dan bertanggung jawab dalam pencatatan administrasi keuangan dan pengelolaan.",
+        "Mengawasi implementasi aturan terkait penggunaan dana kegiatan sesuai dengan Anggaran Dasar/Anggaran Rumah Tangga.",
+        "Dalam pemasaran telah memberikan kesempatan untuk berinteraksi dengan pelanggan, mengembangkan keterampilan komunikasi dan membangun hubungan yang kuat.",
+        "Menciptakan dan mengelola konten untuk platform media sosial, merancang materi promosi untuk menarik pelanggan dan meningkatkan penjualan."
+      ]
+    },
+    {
+      "period": "06 September 2021 - 03 Desember 2021",
+      "role": {
+        "en": "Praktek Kerja Lapangan (PKL)",
+        "id_lang": "Praktek Kerja Lapangan (PKL)"
+      },
+      "company": "Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN)",
+      "location": "Jakarta, Indonesia",
+      "type": "Government Media & Documentation",
+      "highlights": [
+        "Membuat video dokumenter di channel YouTube Dithanlan, mengasah kemampuan produksi video, pengeditan, dan storytelling visual.",
+        "Membuat desain grafis di media sosial Dithanlan sesuai branding untuk meningkatkan keterlibatan audiens publik.",
+        "Membuat rangkuman notulen rapat Zoom harian guna pendokumentasian jelas dan terstruktur.",
+        "Mengikuti dinas harian ke Walikota Depok, memberikan pengalaman komunikasi profesional dan pengelolaan waktu di lingkungan pemerintahan."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2017 - 2023",
+      "institution": "Universitas Indraprasta PGRI",
+      "degree": {
+        "en": "Bachelor of Visual Communication Design (S1 DKV)",
+        "id_lang": "S1 Desain Komunikasi Visual (S.Ds)"
+      },
+      "score": "IPK 2.75",
+      "location": "Jakarta, Indonesia",
+      "description": {
+        "en": "Focused on creative visual communication, graphic design, corporate branding, video editing, photography, and multimedia storytelling.",
+        "id_lang": "Mendalami bidang komunikasi visual kreatif, desain grafis, branding korporat, produksi dan editing video, fotografi, serta multimedia storytelling."
+      }
+    },
+    {
+      "period": "2014 - 2017",
+      "institution": "MA AL - FATHIYAH",
+      "degree": {
+        "en": "Social Sciences (IPS)",
+        "id_lang": "Ilmu Pengetahuan Sosial (IPS)"
+      },
+      "score": "Nilai Akhir 48.5",
+      "location": "Jakarta, Indonesia",
+      "description": {
+        "en": "Graduated with strong foundation in social sciences, public communication, and team collaboration.",
+        "id_lang": "Lulus dengan fondasi kuat dalam ilmu sosial, komunikasi publik, dan kerja sama tim."
+      }
+    }
+  ],
+  "organizations": [
+    {
+      "year": "2026",
+      "role": "Crew Shopkeeper",
+      "event": "Hyrox Jakarta",
+      "description": "Managing store logistics, merchandise sales, and customer assistance for international fitness racing event Hyrox."
+    },
+    {
+      "year": "2023",
+      "role": "Crew Floor",
+      "event": "Pesta Semalam Minggu Vol.4",
+      "description": "Floor management, crowd coordination, and backstage operational support for prominent music festival."
+    },
+    {
+      "year": "2019",
+      "role": "Media & Documentation Team",
+      "event": "Depok 10K Run",
+      "description": "Event coverage, sports photography, and social media media publication."
+    },
+    {
+      "year": "2018",
+      "role": "Media Exhibition Team",
+      "event": "Samahita - The 3rd Photobook Exhibition & Photography Expo",
+      "description": "Curating visual documentation, cataloging photographic works, and media relations."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "bnsp-welder",
+      "title": "Plate Welder : 3G SMAW",
+      "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
+      "year": "2026",
+      "location": "Jakarta",
+      "category": "Industrial Welding",
+      "fileUrl": "/sertifikat/SERTIFIKAT BNSP _ MUHAMAD RIVAI.pdf"
+    },
+    {
+      "id": "ppkd-welder",
+      "title": "Pelatihan Kejuruan Las SMAW 3G",
+      "issuer": "PPKD Jakarta Timur",
+      "year": "2026",
+      "location": "Jakarta",
+      "category": "Industrial Welding",
+      "fileUrl": "/sertifikat/Sertifikat 3G SMAW PPKD JAKARTA TIMUR - MUHAMAD RIVAI_page-0001.jpg.jpeg"
+    },
+    {
+      "id": "bnsp-hr-admin",
+      "title": "Staff Administrasi SDM",
+      "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
+      "year": "2025",
+      "location": "Jakarta",
+      "category": "Human Resources & Administration",
+      "fileUrl": "/sertifikat/BNSP STAFF ADMINISTRASI SDM - MUHAMAD RI.pdf"
+    },
+    {
+      "id": "kimia-farma-exp",
+      "title": "Pelaksana Culture & People Experience",
+      "issuer": "PT. Kimia Farma Apotek",
+      "year": "2024",
+      "location": "Jakarta",
+      "category": "Corporate Culture & Media",
+      "fileUrl": "/sertifikat/Sertifikat Kimia Farma Apotek - Muhamad Rivai.pdf"
+    },
+    {
+      "id": "bkkbn-pkl",
+      "title": "Praktek Kerja Lapangan (PKL)",
+      "issuer": "Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN)",
+      "year": "2021",
+      "location": "Jakarta",
+      "category": "Public Communication & Media",
+      "fileUrl": "/sertifikat/SERTIFIKAT MUHAMAD RIVAI - BKKBN.pdf"
+    },
+    {
+      "id": "depok-10k-cert",
+      "title": "Media and Documentation",
+      "issuer": "Depok 10K Run Committee",
+      "year": "2019",
+      "location": "Depok",
+      "category": "Event Media & Documentation",
+      "fileUrl": "/sertifikat/sertifikat_Muhamad_Rivai(1).pdf"
+    },
+    {
+      "id": "samahita-expo",
+      "title": "Media The 3rd Photobook Exhibition & Photography Expo",
+      "issuer": "Samahita",
+      "year": "2018",
+      "location": "Jakarta",
+      "category": "Photography & Arts Exhibition",
+      "fileUrl": "/sertifikat/sertifikat_Samahita_Muhamad_Rivai_HD.pdf"
+    }
+  ]
+}

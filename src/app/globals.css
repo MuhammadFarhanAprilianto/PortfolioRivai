@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.cdnfonts.com/css/agrandir');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #000000;
+  --card-bg: #1F1E25;
+  --card-hover-bg: #272630;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --text-main: #ffffff;
+  --text-muted: #e2e8f0;
+  --accent-lime: #a6f30d;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family: 'Agrandir', 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, button, input, select, textarea, p, span, a, label, li, td, th {
+  font-family: 'Agrandir', 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading, .font-questrial {
+  font-family: 'Questrial', 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* Crisp White Dot-Grid on Pure Black Background */
+.bg-dot-grid {
+  background-color: #000000;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.38) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+/* 3D Crystal Liquid Glass Pill Capsule (Navbar) */
+.crystal-glass-container {
+  position: relative;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    rgba(31, 30, 37, 0.96) 0%,
+    rgba(22, 21, 27, 0.98) 100%
+  );
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.2),
+    0 16px 40px -10px rgba(0, 0, 0, 0.9),
+    0 4px 12px -2px rgba(0, 0, 0, 0.6);
+}
+
+/* Bento Card Design (#1F1E25) */
+.bento-card {
+  background-color: #1F1E25;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  box-shadow: 0 6px 28px -2px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.bento-card:hover {
+  border-color: rgba(166, 243, 13, 0.5);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.85), 0 0 20px 0 rgba(166, 243, 13, 0.12);
+}
+
+/* LabsStdio Signature Button Hover Effect */
+.btn-labs {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: #272630;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-labs:hover {
+  border-color: #a6f30d;
+  box-shadow: 0 6px 20px -4px rgba(166, 243, 13, 0.35);
+}
+
+.btn-labs-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: #a6f30d;
+  transform: translateX(-100%);
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-labs:hover .btn-labs-backdrop {
+  transform: translateX(0);
+}
+
+.btn-labs-icon {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+}
+
+.btn-labs:hover .btn-labs-icon {
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: translateX(2px);
+}
+
+.btn-labs-text {
+  position: relative;
+  z-index: 10;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.btn-labs:hover .btn-labs-text {
+  color: #000000;
+}
+
+/* Card Placeholder Styling */
+.card-placeholder-mesh {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(166, 243, 13, 0.06) 100%);
+  border: 1.5px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #33323e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a6f30d;
+}
