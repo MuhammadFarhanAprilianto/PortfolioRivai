@@ -2,8 +2,8 @@ import './globals.css';
 
 export const metadata = {
   title: 'Muhamad Rivai - Portfolio | Visual Communication Designer & QC Specialist',
-  description: 'Portofolio Resmi Muhamad Rivai - S1 Desain Komunikasi Visual Unindra, Quality Control Specialist, BNSP Welder 3G SMAW, & Retail Operations Leader',
-  keywords: 'Muhamad Rivai, Portofolio, Desain Komunikasi Visual, DKV, Quality Control, Welder 3G SMAW, Kimia Farma, Pstore',
+  description: 'Portofolio Resmi Muhamad Rivai - S1 Desain Komunikasi Visual Unindra, Quality Control Specialist, BNSP Welder 3G SMAW & 3G GMAW, & Retail Operations Leader',
+  keywords: 'Muhamad Rivai, Portofolio, Desain Komunikasi Visual, DKV, Quality Control, Welder 3G SMAW, Welder 3G GMAW, Kimia Farma, Pstore',
   icons: {
     icon: [
       { url: '/assets/Logo Web.webp', type: 'image/webp' },

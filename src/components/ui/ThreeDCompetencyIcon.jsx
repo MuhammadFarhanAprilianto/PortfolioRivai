@@ -33,6 +33,8 @@ const COMPETENCY_ICONS = {
   'Feeler Gauge': { icon: Layers01Icon, color: '#a6f30d', glow: 'rgba(166, 243, 13, 0.4)' },
   'Caliper / Jangka Sorong': { icon: Compass01Icon, color: '#a6f30d', glow: 'rgba(166, 243, 13, 0.4)' },
   'Welder 3G SMAW (AWS)': { icon: FireIcon, color: '#FF5722', glow: 'rgba(255, 87, 34, 0.4)' },
+  'Welder 3G GMAW (AWS)': { icon: FireIcon, color: '#FB923C', glow: 'rgba(251, 146, 60, 0.4)' },
+  'Welder 3G GMAW': { icon: FireIcon, color: '#FB923C', glow: 'rgba(251, 146, 60, 0.4)' },
   'Welder GMAW': { icon: FireIcon, color: '#FB923C', glow: 'rgba(251, 146, 60, 0.4)' },
   'Welder Robotics': { icon: CpuIcon, color: '#06B6D4', glow: 'rgba(6, 182, 212, 0.4)' },
   'K3 & 5R/5S Safety': { icon: SecurityCheckIcon, color: '#10B981', glow: 'rgba(16, 185, 129, 0.4)' },

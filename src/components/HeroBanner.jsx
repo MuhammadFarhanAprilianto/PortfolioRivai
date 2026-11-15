@@ -5,19 +5,20 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight01Icon, Download04Icon, Image01Icon } from 'hugeicons-react';
 import LabsButton from './ui/LabsButton';
 import { BlurReveal, BlurWords } from './ui/BlurReveal';
+import { t, isEnglish } from '@/lib/i18n';
 
 export default function HeroBanner({ data, lang }) {
   const heroData = data?.hero || {};
   const profile = data?.profile || {};
-  const isEn = lang === 'en';
+  const isEn = isEnglish(lang);
 
-  const headline = typeof heroData.headline === 'object'
-    ? (heroData.headline[lang] || heroData.headline.id_lang || heroData.headline.en)
-    : (isEn
-      ? (heroData.headline || 'Quality Control, Welder 3G SMAW, Store Leader & Marketing, Visual Communication Designer.')
-      : 'Quality Control, Welder 3G SMAW, Leader & Marketing Store & Desainer Komunikasi Visual.');
-  const subheadline = heroData.subheadline?.[lang] || heroData.subheadline?.en || '';
-  const roleText = profile.role?.[lang] || profile.role?.id_lang || profile.role?.en || (isEn ? 'Quality Control | Welder 3G SMAW | Store Leader & Marketing | Visual Communication Designer' : 'Quality Control | Welder 3G SMAW | Leader & Marketing Store | Desainer Komunikasi Visual');
+  const headline = t(heroData.headline, lang) || (isEn
+    ? 'Welder 3G GMAW, Quality Control, Welder 3G SMAW, Store Leader & Marketing.'
+    : 'Welder 3G GMAW, Quality Control, Welder 3G SMAW, Leader & Marketing Store.');
+  const subheadline = t(heroData.subheadline, lang);
+  const roleText = t(profile.role, lang) || (isEn
+    ? 'Welder 3G GMAW | Quality Control | Welder 3G SMAW | Store Leader & Marketing'
+    : 'Welder 3G GMAW | Quality Control | Welder 3G SMAW | Leader & Marketing Store');
   const name = profile.name || 'Muhamad Rivai';
   const location = profile.location || 'Jakarta, Indonesia';
   const avatarUrl = profile.heroAvatar || profile.avatar || '';
@@ -70,8 +71,8 @@ export default function HeroBanner({ data, lang }) {
 
           {/* Subheadline & Shortened Biography (Agrandir font) */}
           <BlurReveal delay={0.2} duration={0.7} blurAmount="10px">
-            <p className="font-agrandir text-white text-sm sm:text-base lg:text-lg leading-relaxed font-normal max-w-2xl opacity-90">
-              Hi, I'm <strong className="font-bold text-white">{name}</strong>. {subheadline}
+            <p className="font-agrandir text-white text-sm sm:text-base lg:text-lg leading-relaxed font-normal max-w-2xl opacity-90 text-justify">
+              {isEn ? "Hi, I'm " : "Halo, saya "}<strong className="font-bold text-white">{name}</strong>. {subheadline}
             </p>
           </BlurReveal>
 
@@ -98,7 +99,7 @@ export default function HeroBanner({ data, lang }) {
                 variant="white"
                 className="w-full sm:w-auto"
               >
-                Download CV
+                {isEn ? 'Download CV' : 'Unduh CV'}
               </LabsButton>
             </div>
           </BlurReveal>

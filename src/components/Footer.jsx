@@ -11,9 +11,10 @@ import {
   InstagramIcon,
 } from 'hugeicons-react';
 import { BlurReveal, BlurWords } from './ui/BlurReveal';
+import { isEnglish } from '@/lib/i18n';
 
 export default function Footer({ data, lang }) {
-  const isEn = lang === 'en';
+  const isEn = isEnglish(lang);
   const profile = data?.profile || {};
   const email = profile.email || 'mrpai267@gmail.com';
   const phone = profile.phone || '+62 896-2267-1182';
@@ -53,8 +54,8 @@ export default function Footer({ data, lang }) {
               </h2>
               <p className="text-sm text-white opacity-90 leading-relaxed max-w-lg">
                 {isEn
-                  ? 'Open for full-time career opportunities and professional projects in Quality Control (QC), 3G SMAW Plate Welding, Store Leader & Marketing, and Visual Communication Design across manufacturing, construction, and mining industries.'
-                  : 'Terbuka untuk peluang kerja purna waktu maupun proyek profesional di bidang Quality Control (QC), Welder 3G SMAW, Leader & Marketing Store, serta Desain Komunikasi Visual (Fotografi & Videografi) pada industri manufaktur, konstruksi, dan pertambangan.'}
+                  ? 'Open for full-time career opportunities and professional projects in Quality Control (QC), 3G SMAW & 3G GMAW Plate Welding, Store Leader & Marketing, and Visual Communication Design across manufacturing, construction, and mining industries.'
+                  : 'Terbuka untuk peluang kerja purna waktu maupun proyek profesional di bidang Quality Control (QC), Welder 3G SMAW & 3G GMAW, Leader & Marketing Store, serta Desain Komunikasi Visual (Fotografi & Videografi) pada industri manufaktur, konstruksi, dan pertambangan.'}
               </p>
             </div>
 
@@ -74,7 +75,7 @@ export default function Footer({ data, lang }) {
                   </div>
                   <div className="min-w-0">
                     <span className="text-[10px] sm:text-[11px] font-bold text-slate-300 uppercase tracking-wider block">
-                      Direct Email
+                      {isEn ? 'Direct Email' : 'Email Langsung'}
                     </span>
                     {/* Vertical Rolling Slot-Machine Text */}
                     <span className="relative z-10 block overflow-hidden h-[1.3rem] sm:h-[1.4rem] leading-[1.3rem] sm:leading-[1.4rem]">
@@ -126,7 +127,9 @@ export default function Footer({ data, lang }) {
                     <Location01Icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold text-slate-300 uppercase tracking-wider block">Location</span>
+                    <span className="text-[10px] font-bold text-slate-300 uppercase tracking-wider block">
+                      {isEn ? 'Location' : 'Lokasi'}
+                    </span>
                     <span className="text-xs font-bold text-white">{location}</span>
                   </div>
                 </div>
@@ -138,7 +141,7 @@ export default function Footer({ data, lang }) {
 
           {/* Footer Bottom Line */}
           <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold text-white/80">
-            <span>© 2026 Muhamad Rivai. All rights reserved.</span>
+            <span>© 2026 Muhamad Rivai. {isEn ? 'All rights reserved.' : 'Hak cipta dilindungi.'}</span>
 
             <div className="flex items-center gap-3">
               {profile.linkedin && (

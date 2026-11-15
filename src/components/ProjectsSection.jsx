@@ -10,12 +10,13 @@ import {
   Calendar01Icon,
 } from 'hugeicons-react';
 import { BlurReveal, BlurWords } from './ui/BlurReveal';
+import { t, isEnglish } from '@/lib/i18n';
 
 export default function ProjectsSection({ data, lang }) {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [activeProject, setActiveProject] = useState(null);
 
-  const isEn = lang === 'en';
+  const isEn = isEnglish(lang);
   const projects = data?.projects || [];
 
   const filteredProjects = selectedCategory === 'ALL'
@@ -64,7 +65,7 @@ export default function ProjectsSection({ data, lang }) {
           {/* Category Pills Filter with LabsStdio Vertical Rolling Scroll Hover Animation */}
           <div className="flex flex-wrap gap-2 overflow-x-auto pb-1 max-w-full">
             {[
-              { key: 'ALL', label: 'ALL' },
+              { key: 'ALL', label: isEn ? 'ALL' : 'SEMUA' },
               { key: 'Retail Leadership & Growth', label: isEn ? 'Retail & Growth' : 'Retail & Toko' },
               { key: 'Visual Design & Video Production', label: isEn ? 'Design & Video' : 'Desain & Video' },
               { key: 'Industrial Manufacturing', label: isEn ? 'Industrial & QC' : 'Industri & QC' },
@@ -105,8 +106,10 @@ export default function ProjectsSection({ data, lang }) {
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((proj, idx) => {
-          const title = proj.title?.[lang] || proj.title?.en;
-          const desc = proj.description?.[lang] || proj.description?.en;
+          const title = t(proj.title, lang);
+          const desc = t(proj.description, lang);
+          const category = t(proj.category, lang);
+          const year = t(proj.year, lang);
 
           return (
             <BlurReveal key={proj.id} delay={0.1 + idx * 0.08} duration={0.65}>
@@ -129,10 +132,10 @@ export default function ProjectsSection({ data, lang }) {
                           <Image01Icon className="w-6 h-6 text-white group-hover:text-[#a6f30d] transition-colors" />
                         </div>
                         <span className="font-questrial font-bold text-xs text-white">
-                          {proj.category}
+                          {category}
                         </span>
                         <span className="text-[10px] text-slate-300 mt-0.5">
-                          {proj.year}
+                          {year}
                         </span>
                       </div>
                     )}
@@ -142,7 +145,7 @@ export default function ProjectsSection({ data, lang }) {
                   <div>
                     <div className="flex items-center justify-between text-xs text-slate-300 mb-1">
                       <span className="font-semibold text-white">{proj.company}</span>
-                      <span className="font-mono text-[#a6f30d] font-bold">{proj.year}</span>
+                      <span className="font-mono text-[#a6f30d] font-bold">{year}</span>
                     </div>
 
                     <h3 className="font-questrial font-bold text-base sm:text-lg text-white group-hover:text-[#d4f938] transition-colors line-clamp-2">
@@ -192,7 +195,7 @@ export default function ProjectsSection({ data, lang }) {
             
             <div className="flex items-center justify-between">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#a6f30d]/20 text-[#d4f938] border border-[#a6f30d]/40">
-                {activeProject.category}
+                {t(activeProject.category, lang)}
               </span>
               <button
                 onClick={() => setActiveProject(null)}
@@ -207,17 +210,17 @@ export default function ProjectsSection({ data, lang }) {
               {activeProject.image ? (
                 <img
                   src={activeProject.image}
-                  alt={activeProject.title?.[lang] || activeProject.title?.en}
+                  alt={t(activeProject.title, lang)}
                   className="w-full h-full object-cover object-center"
                 />
               ) : (
                 <div className="w-full h-full card-placeholder-mesh flex flex-col items-center justify-center p-6 text-center">
                   <Image01Icon className="w-10 h-10 text-white mb-2" />
                   <span className="font-questrial font-bold text-sm text-white">
-                    {activeProject.title?.[lang] || activeProject.title?.en}
+                    {t(activeProject.title, lang)}
                   </span>
                   <span className="text-xs text-slate-300 mt-1">
-                    {activeProject.role} - {activeProject.company}
+                    {t(activeProject.role, lang)} - {activeProject.company}
                   </span>
                 </div>
               )}
@@ -225,7 +228,7 @@ export default function ProjectsSection({ data, lang }) {
 
             <div className="space-y-3">
               <h3 className="font-questrial font-bold text-xl sm:text-2xl text-white">
-                {activeProject.title?.[lang] || activeProject.title?.en}
+                {t(activeProject.title, lang)}
               </h3>
 
               <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-white opacity-90">
@@ -235,16 +238,16 @@ export default function ProjectsSection({ data, lang }) {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Calendar01Icon className="w-4 h-4 text-[#a6f30d]" />
-                  <span>{activeProject.year}</span>
+                  <span>{t(activeProject.year, lang)}</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Tag01Icon className="w-4 h-4 text-[#a6f30d]" />
-                  <span>Role: {activeProject.role}</span>
+                  <span>Role: {t(activeProject.role, lang)}</span>
                 </div>
               </div>
 
               <p className="text-sm text-white leading-relaxed pt-2 opacity-95">
-                {activeProject.description?.[lang] || activeProject.description?.en}
+                {t(activeProject.description, lang)}
               </p>
             </div>
 

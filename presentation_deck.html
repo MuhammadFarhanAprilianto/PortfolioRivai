@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Portofolio Profesional - Muhamad Rivai</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+@page {
+  size: 1920px 1080px;
+  margin: 0;
+}
+
+html, body {
+  width: 1920px;
+  margin: 0;
+  padding: 0;
+  background-color: #070709;
+  color: #ffffff;
+  font-family: 'Segoe UI', 'Outfit', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.slide {
+  width: 1920px;
+  height: 1080px;
+  max-height: 1080px;
+  position: relative;
+  page-break-after: always;
+  page-break-inside: avoid;
+  overflow: hidden;
+  padding: 44px 68px 36px 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #08080b;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* Slide Header */
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 10;
+}
+
+.slide-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a6f30d;
+  background: rgba(166, 243, 13, 0.1);
+  border: 1px solid rgba(166, 243, 13, 0.35);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.category-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #a6f30d;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #a6f30d;
+}
+
+.slide-title {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  line-height: 1.15;
+}
+
+.slide-title span.lime {
+  color: #a6f30d;
+}
+
+.slide-title span.cyan {
+  color: #38bdf8;
+}
+
+.slide-index-pill {
+  font-size: 14px;
+  font-weight: 700;
+  color: #94a3b8;
+  background: #14131b;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 8px 18px;
+  border-radius: 9999px;
+  letter-spacing: 1px;
+}
+
+/* Slide Body / Content */
+.slide-body {
+  flex: 1;
+  display: flex;
+  gap: 28px;
+  min-height: 0;
+  position: relative;
+  z-index: 5;
+}
+
+/* Bento Card Base */
+.bento {
+  background: linear-gradient(145deg, #16151f 0%, #100f16 100%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.85);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-highlight {
+  border-color: rgba(166, 243, 13, 0.35);
+  box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.85), 0 0 24px rgba(166, 243, 13, 0.08);
+}
+
+/* Badges & Tags */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.badge-lime {
+  background: rgba(166, 243, 13, 0.15);
+  color: #a6f30d;
+  border: 1px solid rgba(166, 243, 13, 0.4);
+}
+
+.badge-cyan {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.badge-amber {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+}
+
+.badge-emerald {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.4);
+}
+
+.badge-gray {
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Slide Footer */
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 13px;
+  color: #64748b;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-left {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-left span.accent {
+  color: #a6f30d;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #64748b;
+}
+
+/* Slide 1 Cover Specifics */
+.cover-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.cover-left {
+  flex: 1.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+.cover-badge-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(166, 243, 13, 0.12);
+  border: 1.5px solid #a6f30d;
+  color: #a6f30d;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  width: fit-content;
+}
+
+.cover-name {
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -2px;
+  color: #ffffff;
+}
+
+.cover-name span {
+  color: #a6f30d;
+  text-shadow: 0 0 30px rgba(166, 243, 13, 0.35);
+}
+
+.cover-role {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1.35;
+  border-left: 4px solid #a6f30d;
+  padding-left: 18px;
+}
+
+.cover-desc {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 920px;
+}
+
+.cover-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.cover-hi-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cover-hi-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(166, 243, 13, 0.15);
+  border: 1px solid rgba(166, 243, 13, 0.4);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a6f30d;
+  font-size: 14px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.cover-hi-text {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.cover-right {
+  flex: 0.85;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-hero-frame {
+  position: relative;
+  width: 440px;
+  height: 590px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 2px solid rgba(166, 243, 13, 0.45);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(166, 243, 13, 0.2);
+  background: #14131a;
+}
+
+.profile-hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.profile-logo-float {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(15, 14, 20, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(166, 243, 13, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.profile-logo-float img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.profile-status-float {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: rgba(15, 14, 20, 0.92);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Two Column Project Layout */
+.project-two-col {
+  display: flex;
+  gap: 36px;
+  width: 100%;
+  height: 100%;
+}
+
+.project-img-box {
+  flex: 0.95;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background: #14131a;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+}
+
+.project-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(15, 14, 20, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(166, 243, 13, 0.5);
+  color: #a6f30d;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 9999px;
+}
+
+.project-details {
+  flex: 1.05;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proj-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.proj-meta-pill {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.proj-meta-pill strong {
+  color: #ffffff;
+}
+
+.proj-desc-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px 22px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 18px;
+}
+
+.proj-highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 18px;
+}
+
+.proj-highlight-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 14.5px;
+  line-height: 1.48;
+  color: #e2e8f0;
+}
+
+.proj-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(166, 243, 13, 0.18);
+  border: 1px solid #a6f30d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a6f30d;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.proj-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Two Card Layout for Pair Projects */
+.pair-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.pair-card {
+  background: linear-gradient(145deg, #16151f 0%, #100f16 100%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.pair-card-img {
+  width: 100%;
+  height: 255px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pair-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pair-card-title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.pair-card-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+/* Timeline Layout */
+.timeline-deck {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  padding: 10px 18px;
+}
+
+.tl-period {
+  width: 210px;
+  flex-shrink: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #a6f30d;
+}
+
+.tl-role-box {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.tl-role {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tl-company {
+  font-size: 12.5px;
+  color: #94a3b8;
+}
+
+.tl-desc {
+  flex: 1;
+  font-size: 13.5px;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.tl-type-badge {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 12px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+/* Grid 3x2 */
+.grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid 2x2 */
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Grid 4x2 for Certs */
+.grid-certs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.cert-card {
+  background: linear-gradient(145deg, #16151f 0%, #100f16 100%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cert-icon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cert-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(166, 243, 13, 0.15);
+  border: 1.5px solid rgba(166, 243, 13, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a6f30d;
+  font-size: 19px;
+}
+
+.cert-title {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.cert-issuer {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 12px;
+}
+
+/* Closing Slide */
+.closing-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.closing-left {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 26px;
+}
+
+.closing-quote {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.38;
+  color: #f8fafc;
+}
+
+.closing-quote span {
+  color: #a6f30d;
+}
+
+.closing-desc {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #94a3b8;
+}
+
+.contact-channels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.contact-channel-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-channel-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(166, 243, 13, 0.15);
+  border: 1px solid rgba(166, 243, 13, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a6f30d;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-channel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-channel-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.contact-channel-val {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.closing-right {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.closing-card {
+  width: 440px;
+  background: linear-gradient(145deg, #181722 0%, #121118 100%);
+  border: 2px solid rgba(166, 243, 13, 0.35);
+  border-radius: 26px;
+  padding: 32px 28px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(166, 243, 13, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.closing-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #a6f30d;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(166, 243, 13, 0.3);
+  margin-bottom: 18px;
+}
+
+.closing-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.closing-name {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.closing-sub {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #a6f30d;
+  margin-bottom: 16px;
+}
+
+.closing-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: #a6f30d;
+  color: #000000;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 13px 20px;
+  border-radius: 9999px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: COVER / HERO -->
+<div class="slide">
+  <div class="cover-container">
+    <div class="cover-left">
+      <div class="cover-badge-top">
+        <span class="category-dot"></span>
+        SIAP MENGHADAPI TANTANGAN BARU • AVAILABLE FOR WORK
+      </div>
+      <h1 class="cover-name">MUHAMAD <span>RIVAI</span></h1>
+      <div class="cover-role">
+        Welder 3G GMAW &amp; SMAW | Quality Control | Store Leader &amp; Marketing
+      </div>
+      <p class="cover-desc">
+        Profesional multi-disiplin berlatar belakang S1 Desain Komunikasi Visual Universitas Indraprasta PGRI yang memadukan keahlian kreatif multimedia dengan presisi teknis pengelasan industri bersertifikasi BNSP &amp; standar AWS, inspeksi Quality Control otomotif, serta rekam jejak kepemimpinan cabang retail berskala nasional.
+      </p>
+      
+      <div class="cover-highlights-grid">
+        <div class="cover-hi-card">
+          <div class="cover-hi-icon">01</div>
+          <div class="cover-hi-text">Sertifikasi BNSP Plate Welder 3G SMAW &amp; GMAW (AWS)</div>
+        </div>
+        <div class="cover-hi-card">
+          <div class="cover-hi-icon">02</div>
+          <div class="cover-hi-text">Certified Quality Control Komponen Otomotif (K3 &amp; 5R)</div>
+        </div>
+        <div class="cover-hi-card">
+          <div class="cover-hi-icon">03</div>
+          <div class="cover-hi-text">Store Leader Rekor Omzet Rp100 Juta/Hari (Pstore)</div>
+        </div>
+        <div class="cover-hi-card">
+          <div class="cover-hi-icon">04</div>
+          <div class="cover-hi-text">S1 Desain Komunikasi Visual (DKV Unindra)</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cover-right">
+      <div class="profile-hero-frame">
+        <img src="public/assets/optimized/Foto-Profile-1.jpg" alt="Muhamad Rivai">
+        <div class="profile-logo-float">
+          <img src="public/assets/Logo Web.webp" alt="Logo">
+        </div>
+        <div class="profile-status-float">
+          <div>
+            <div style="font-size: 11px; font-weight: 700; color: #a6f30d; letter-spacing: 1px;">STATUS PROFESIONAL</div>
+            <div style="font-size: 14px; font-weight: 700; color: #ffffff;">Siap Rekrutmen &amp; Penempatan</div>
+          </div>
+          <span class="badge badge-lime">VERIFIED BNSP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="slide-footer">
+    <div class="footer-left">
+      <span>MUHAMAD RIVAI</span>
+      <span>•</span>
+      <span class="accent">PORTOFOLIO PROFESIONAL 2026</span>
+    </div>
+    <div class="footer-right">
+      <span>mrpai267@gmail.com</span>
+      <span>•</span>
+      <span>+62 896-2267-1182</span>
+      <span>•</span>
+      <span>Jakarta, Indonesia</span>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 2: ABOUT ME & EXECUTIVE SUMMARY -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> TENTANG SAYA • PROFIL EKSEKUTIF</div>
+      <h2 class="slide-title">Keahlian Industri &amp; <span class="lime">Identitas Visual</span></h2>
+    </div>
+    <div class="slide-index-pill">02 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <!-- Left Card -->
+    <div class="bento" style="flex: 0.85; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center;">
+      <div style="width: 220px; height: 260px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(166, 243, 13, 0.4); box-shadow: 0 10px 30px rgba(0,0,0,0.7); margin-top: 10px;">
+        <img src="public/assets/optimized/Foto-Profile-2.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Muhamad Rivai">
+      </div>
+      <div style="margin-top: 18px;">
+        <h3 style="font-size: 24px; font-weight: 800; color: #ffffff;">Muhamad Rivai, S.Ds</h3>
+        <p style="font-size: 14px; font-weight: 600; color: #a6f30d; margin-top: 4px;">Multi-Disciplinary Professional</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; width: 100%; margin-top: 16px;">
+        <div style="background: rgba(255,255,255,0.04); padding: 10px 14px; border-radius: 10px; font-size: 13px; text-align: left; display: flex; justify-content: space-between;">
+          <span style="color: #94a3b8;">Pendidikan:</span>
+          <span style="color: #ffffff; font-weight: 600;">S1 DKV (Unindra)</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); padding: 10px 14px; border-radius: 10px; font-size: 13px; text-align: left; display: flex; justify-content: space-between;">
+          <span style="color: #94a3b8;">Sertifikasi:</span>
+          <span style="color: #a6f30d; font-weight: 600;">BNSP 3G GMAW &amp; SMAW</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.04); padding: 10px 14px; border-radius: 10px; font-size: 13px; text-align: left; display: flex; justify-content: space-between;">
+          <span style="color: #94a3b8;">Domisili:</span>
+          <span style="color: #ffffff; font-weight: 600;">DKI Jakarta, Indonesia</span>
+        </div>
+      </div>
+      <div style="display: flex; gap: 8px; width: 100%; margin-top: 14px;">
+        <span class="badge badge-lime" style="flex: 1; justify-content: center; padding: 8px;">K3 &amp; 5S Certified</span>
+        <span class="badge badge-cyan" style="flex: 1; justify-content: center; padding: 8px;">AWS Standards</span>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div style="flex: 1.35; display: flex; flex-direction: column; gap: 20px;">
+      <div class="bento bento-highlight" style="padding: 26px;">
+        <h4 style="font-size: 20px; font-weight: 700; color: #a6f30d; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+          <span style="width: 10px; height: 10px; background: #a6f30d; border-radius: 50%;"></span>
+          RINGKASAN PROFIL PROFESIONAL
+        </h4>
+        <p style="font-size: 15.5px; line-height: 1.65; color: #cbd5e1; text-align: justify;">
+          Profesional multi-disiplin lulusan <strong>S1 Desain Komunikasi Visual Universitas Indraprasta PGRI</strong> yang memadukan keahlian fotografi dan videografi kreatif dengan ketelitian teknis industri. Memiliki komitmen karier tinggi pada perusahaan manufaktur, konstruksi, pertambangan, dan industri retail komersial. Memiliki kompetensi teknis bersertifikasi resmi dalam <strong>Quality Control (QC)</strong> serta pengelasan berlisensi <strong>BNSP (Plate Welder 3G SMAW &amp; 3G GMAW standar AWS)</strong>.
+        </p>
+        <p style="font-size: 15.5px; line-height: 1.65; color: #cbd5e1; text-align: justify; margin-top: 12px;">
+          Berpengalaman sebagai <strong>Store Leader &amp; Marketing</strong> dalam membangun cabang retail dari nol, merancang strategi pemasaran, mencetak <strong>omzet harian hingga Rp100 Juta</strong>, serta pengendalian inventaris. Terbiasa bekerja dengan disiplin tinggi menggunakan alat ukur presisi (Go/No-Go, Feeler Gauge, Caliper), pembacaan gambar kerja (drawing), identifikasi visual cacat las, serta kepatuhan penuh pada <strong>Welding Procedure Specification (WPS), 5R/5S, dan K3</strong>.
+        </p>
+      </div>
+
+      <!-- 4 Stats Cards Grid -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; flex: 1;">
+        <div class="bento" style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <div style="font-size: 38px; font-weight: 900; color: #a6f30d; line-height: 1;">6+ Thn</div>
+          <div style="font-size: 13px; font-weight: 700; color: #e2e8f0; margin-top: 8px;">Pengalaman Kerja</div>
+          <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">Manufaktur, QC, Retail</div>
+        </div>
+
+        <div class="bento" style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <div style="font-size: 38px; font-weight: 900; color: #38bdf8; line-height: 1;">100Jt+</div>
+          <div style="font-size: 13px; font-weight: 700; color: #e2e8f0; margin-top: 8px;">Omzet Harian</div>
+          <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">Pstore Tarakan Rekor</div>
+        </div>
+
+        <div class="bento" style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <div style="font-size: 38px; font-weight: 900; color: #fbbf24; line-height: 1;">8+</div>
+          <div style="font-size: 13px; font-weight: 700; color: #e2e8f0; margin-top: 8px;">Sertifikasi Resmi</div>
+          <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">BNSP &amp; Lembaga Negara</div>
+        </div>
+
+        <div class="bento" style="padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+          <div style="font-size: 38px; font-weight: 900; color: #34d399; line-height: 1;">100%</div>
+          <div style="font-size: 13px; font-weight: 700; color: #e2e8f0; margin-top: 8px;">Kepatuhan K3 &amp; 5R</div>
+          <div style="font-size: 11px; color: #94a3b8; margin-top: 2px;">AWS &amp; WPS Standards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">PROFIL &amp; RINGKASAN EKSEKUTIF</span></div>
+    <div class="footer-right"><span>Welder 3G GMAW &amp; SMAW</span><span>•</span><span>Quality Control</span><span>•</span><span>Store Leader</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 3: CORE COMPETENCIES (6 PILAR LAYANAN) -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> KEAHLIAN UTAMA • SERVICES &amp; EXPERTISE</div>
+      <h2 class="slide-title">6 Pilar Kompetensi &amp; <span class="lime">Layanan Profesional</span></h2>
+    </div>
+    <div class="slide-index-pill">03 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="grid-3x2">
+      <!-- 1 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="badge badge-lime">BNSP 2026</span>
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">PILAR 01</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+            Pengelasan Plat 3G GMAW (AWS)
+          </h3>
+          <p style="font-size: 13.5px; line-height: 1.55; color: #cbd5e1;">
+            Pengelasan plat industri posisi 1F-3F fillet dan 1G-3G kampuh groove metode Gas Metal Arc Welding (GMAW/MIG-MAG) sesuai pedoman AWS D1.1, regulasi gas pelindung, serta prosedur WPS resmi.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="badge badge-gray">GMAW 3G</span>
+          <span class="badge badge-gray">MIG / MAG</span>
+          <span class="badge badge-gray">WPS Standard</span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="badge badge-lime">BNSP 2026</span>
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">PILAR 02</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+            Pengelasan Plat 3G SMAW (AWS)
+          </h3>
+          <p style="font-size: 13.5px; line-height: 1.55; color: #cbd5e1;">
+            Keahlian pengelasan standar American Welding Society (AWS) untuk sambungan fillet 1F-3F dan kampuh 1G-3G SMAW (Shielded Metal Arc), pemotongan oxy-fuel, blender cut, dan perbaikan cacat las.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="badge badge-gray">SMAW 3G</span>
+          <span class="badge badge-gray">Oxy-Fuel</span>
+          <span class="badge badge-gray">AWS Standard</span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="badge badge-cyan">0 Defect Goal</span>
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">PILAR 03</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+            Quality Control (QC) Otomotif
+          </h3>
+          <p style="font-size: 13.5px; line-height: 1.55; color: #cbd5e1;">
+            Inspeksi kualitas manufaktur pabrik knalpot, identifikasi cacat pengelasan secara visual, pengukuran presisi alat ukur teknik (Go/No-Go, Feeler Gauge, Caliper), serta budaya 5R &amp; K3.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="badge badge-gray">Go/No-Go Gauge</span>
+          <span class="badge badge-gray">Feeler Gauge</span>
+          <span class="badge badge-gray">5R / 5S</span>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="badge badge-amber">Target Rp 100Jt</span>
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">PILAR 04</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+            Leader &amp; Marketing Store
+          </h3>
+          <p style="font-size: 13.5px; line-height: 1.55; color: #cbd5e1;">
+            Membangun dan memimpin operasional cabang dari nol, merancang strategi pemasaran, pengelolaan inventaris, administrasi keuangan hingga omzet harian Rp100 Juta, serta relasi publik.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="badge badge-gray">Branch Leader</span>
+          <span class="badge badge-gray">Sales Strategy</span>
+          <span class="badge badge-gray">Inventory</span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="badge badge-emerald">100+ Assets</span>
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">PILAR 05</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+            Desain Komunikasi Visual &amp; Konten
+          </h3>
+          <p style="font-size: 13.5px; line-height: 1.55; color: #cbd5e1;">
+            Pembuatan materi visual kreatif, branding identitas korporat, materi promosi grafis, desain media sosial interaktif, dan kampanye digital berdaya tarik estetika tinggi.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="badge badge-gray">Illustrator</span>
+          <span class="badge badge-gray">Canva Pro</span>
+          <span class="badge badge-gray">Social Branding</span>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <span class="badge badge-lime">50+ Videos</span>
+            <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">PILAR 06</span>
+          </div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px;">
+            Produksi Video &amp; Dokumentasi Event
+          </h3>
+          <p style="font-size: 13.5px; line-height: 1.55; color: #cbd5e1;">
+            Pengeditan video profesional, produksi konten TikTok/Reels komersial viral, liputan dokumentasi event berskala nasional/internasional, dan video dokumenter informatif YouTube.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+          <span class="badge badge-gray">Premiere Pro</span>
+          <span class="badge badge-gray">Capcut Pro</span>
+          <span class="badge badge-gray">Videography</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">6 PILAR KOMPETENSI UTAMA</span></div>
+    <div class="footer-right"><span>Welding • Quality Control • Leadership • Creative Media</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 4: TECHNICAL & MANAGERIAL SKILLS MATRIX -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> MATRIKS KOMPETENSI • SKILLS BREAKDOWN</div>
+      <h2 class="slide-title">Penguasaan Keahlian <span class="lime">Teknis &amp; Manajerial</span></h2>
+    </div>
+    <div class="slide-index-pill">04 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="grid-2x2">
+      <!-- Card 1: Manufaktur & Pengelasan -->
+      <div class="bento bento-highlight" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <h3 style="font-size: 21px; font-weight: 700; color: #a6f30d; display: flex; align-items: center; gap: 10px;">
+              <span>⚡</span> PENGELASAN &amp; FABRIKASI LOGAM
+            </h3>
+            <span class="badge badge-lime">BNSP &amp; AWS</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Welder 3G GMAW (MIG/MAG)</span>
+              <span class="badge badge-lime">Bersertifikat BNSP</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Welder 3G SMAW (Stick Electrode)</span>
+              <span class="badge badge-lime">Sertifikasi BNSP</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Mesin Potong Oxy-Fuel &amp; Blender Cut</span>
+              <span class="badge badge-cyan">Terampil</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Pembacaan Gambar Teknik (Drawing)</span>
+              <span class="badge badge-cyan">Terampil</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Kepatuhan WPS &amp; Standar AWS D1.1</span>
+              <span class="badge badge-emerald">Standar Resmi</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Welder Robotics (Pengelasan Robotik)</span>
+              <span class="badge badge-gray">Pemula</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: QC & K3 -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <h3 style="font-size: 21px; font-weight: 700; color: #38bdf8; display: flex; align-items: center; gap: 10px;">
+              <span>🔍</span> QUALITY CONTROL &amp; K3 INDUSTRI
+            </h3>
+            <span class="badge badge-cyan">ISO &amp; 5S Standards</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Quality Control (QC) Inspeksi Otomotif</span>
+              <span class="badge badge-cyan">Tersertifikasi</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Go/No-Go Gauge (Pengukuran Presisi)</span>
+              <span class="badge badge-lime">Ahli (Expert)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Feeler Gauge (Pengukur Celah Baja)</span>
+              <span class="badge badge-lime">Ahli (Expert)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Caliper / Jangka Sorong Digital-Manual</span>
+              <span class="badge badge-lime">Ahli (Expert)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Penerapan Budaya Kerja 5R / 5S Pabrik</span>
+              <span class="badge badge-emerald">Disiplin Tinggi</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Keselamatan &amp; Kesehatan Kerja (K3)</span>
+              <span class="badge badge-emerald">Standar Resmi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Manajemen & Retail -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <h3 style="font-size: 21px; font-weight: 700; color: #fbbf24; display: flex; align-items: center; gap: 10px;">
+              <span>📈</span> KEPEMIMPINAN RETAIL &amp; MARKETING
+            </h3>
+            <span class="badge badge-amber">Proven Track Record</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Store Branch Leadership (Membangun Cabang)</span>
+              <span class="badge badge-amber">Berpengalaman</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Pencapaian Target Omzet (Hingga Rp100Jt/Hari)</span>
+              <span class="badge badge-lime">Terbukti</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Manajemen Inventaris &amp; Kontrol Stock</span>
+              <span class="badge badge-cyan">Terampil</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Administrasi Keuangan &amp; Pembukuan Kas</span>
+              <span class="badge badge-cyan">Terampil</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Strategi Pemasaran Media Sosial &amp; Ads</span>
+              <span class="badge badge-amber">Berpengalaman</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Kemitraan Publik &amp; Influencer Relations</span>
+              <span class="badge badge-amber">Berpengalaman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Software & Kreatif -->
+      <div class="bento" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <h3 style="font-size: 21px; font-weight: 700; color: #34d399; display: flex; align-items: center; gap: 10px;">
+              <span>🎨</span> SOFTWARE &amp; MEDIA KREATIF
+            </h3>
+            <span class="badge badge-emerald">S1 DKV Competency</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 9px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Adobe Premiere Pro (Video Editing)</span>
+              <span class="badge badge-emerald">Mahir (Advanced)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Adobe Illustrator (Vector Graphic &amp; Branding)</span>
+              <span class="badge badge-emerald">Mahir (Advanced)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Capcut Pro (Shorts, Reels, TikTok Content)</span>
+              <span class="badge badge-emerald">Mahir (Advanced)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Canva Pro (Social Media Design)</span>
+              <span class="badge badge-emerald">Mahir (Advanced)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Fotografi &amp; Videografi Profesional</span>
+              <span class="badge badge-emerald">Mahir (Advanced)</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px;">
+              <span style="font-weight: 600; font-size: 13.5px;">Microsoft Office Suite (Word, Excel, PPT)</span>
+              <span class="badge badge-cyan">Terampil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">MATRIKS KEAHLIAN PROFESIONAL</span></div>
+    <div class="footer-right"><span>Manufaktur • Quality Control • Retail Leadership • Kreatif &amp; Desain</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 5: PROJECT 1 - 3G GMAW -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> PROYEK MANUFAKTUR &amp; PENGELASAN</div>
+      <h2 class="slide-title">Fabrikasi &amp; Pengelasan <span class="lime">Plat 3G GMAW (Standar AWS)</span></h2>
+    </div>
+    <div class="slide-index-pill">05 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="project-two-col">
+      <div class="project-img-box">
+        <img src="public/assets/3G GMAW.jpeg" alt="3G GMAW Project">
+        <div class="project-img-badge">BP3MI DKI JAKARTA • BNSP 2026</div>
+      </div>
+
+      <div class="project-details">
+        <div>
+          <div class="proj-meta-bar">
+            <div class="proj-meta-pill">Peran: <strong>Welder Plat 3G GMAW</strong></div>
+            <div class="proj-meta-pill">Institusi: <strong>BP3MI DKI Jakarta</strong></div>
+            <div class="proj-meta-pill">Periode: <strong>Okt - Nov 2026</strong></div>
+            <div class="proj-meta-pill">Sertifikasi: <strong>BNSP Resmi</strong></div>
+          </div>
+
+          <div class="proj-desc-box">
+            Melaksanakan pekerjaan pengelasan plat baja struktural posisi 3G (vertikal naik) sambungan kampuh groove dan sambungan fillet menggunakan metode Gas Metal Arc Welding (GMAW / MIG-MAG) sesuai standar American Welding Society (AWS) dan sertifikasi resmi Badan Nasional Sertifikasi Profesi (BNSP).
+          </div>
+
+          <div class="proj-highlights-list">
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Penyetelan Parameter Presisi:</strong> Menguasai kalibrasi voltase busur las, kecepatan pengumpanan kawat (wire feed speed), serta laju aliran shielding gas (Argon/CO2) untuk proteksi kawah las maksimal.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Pengelasan Posisi Vertikal 3G:</strong> Mampu menjaga kestabilan kolam lelehan las posisi vertikal naik, menghasilkan penetrasi sempurna (full penetration) bebas lack of fusion.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Kepatuhan WPS &amp; Standar AWS D1.1:</strong> Menganalisis gambar teknik kerja serta menjalankan tahapan pengelasan sesuai Welding Procedure Specification untuk mencegah distorsi termal plat.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Inspeksi Visual Mutu Las:</strong> Melakukan pemeriksaan visual terhadap hasil pengelasan guna mendeteksi cacat undercut, porositas, spatter berlebih, serta retak mikro.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-tags-row">
+          <span class="badge badge-lime">Welding 3G GMAW</span>
+          <span class="badge badge-cyan">BNSP Certified</span>
+          <span class="badge badge-gray">AWS D1.1 Standard</span>
+          <span class="badge badge-gray">MIG / MAG</span>
+          <span class="badge badge-emerald">K3 &amp; 5S Compliant</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">PROYEK FABRIKASI PENGELASAN 3G GMAW</span></div>
+    <div class="footer-right"><span>BP3MI DKI Jakarta • Sertifikasi BNSP 2026</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 6: PROJECT 2 - 3G SMAW -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> PROYEK MANUFAKTUR &amp; PENGELASAN</div>
+      <h2 class="slide-title">Fabrikasi &amp; Pengelasan <span class="lime">Plat 3G SMAW (Standar AWS)</span></h2>
+    </div>
+    <div class="slide-index-pill">06 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="project-two-col">
+      <div class="project-img-box">
+        <img src="public/assets/optimized/PPKD.jpg" alt="3G SMAW Project">
+        <div class="project-img-badge">PPKD JAKARTA TIMUR • BNSP 2026</div>
+      </div>
+
+      <div class="project-details">
+        <div>
+          <div class="proj-meta-bar">
+            <div class="proj-meta-pill">Peran: <strong>Welder Plat 3G SMAW</strong></div>
+            <div class="proj-meta-pill">Institusi: <strong>BP3MI / PPKD Jakarta Timur</strong></div>
+            <div class="proj-meta-pill">Periode: <strong>April - Juni 2026</strong></div>
+            <div class="proj-meta-pill">Sertifikasi: <strong>BNSP Resmi</strong></div>
+          </div>
+
+          <div class="proj-desc-box">
+            Melakukan pengelasan plat baja struktural posisi 1F, 2F, 3F fillet (plate to plate) dan sambungan kampuh groove joint 1G, 2G, 3G menggunakan metode Shielded Metal Arc Welding (SMAW / Stick Welding) sesuai standar American Welding Society (AWS) dan sertifikasi resmi BNSP.
+          </div>
+
+          <div class="proj-highlights-list">
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Teknik Pengelasan Posisi Vertikal 3G:</strong> Menguasai kontrol sudut elektroda terbungkus, panjang busur las, dan travel speed konsisten pada sambungan kampuh vertikal naik.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Pemotongan Logam Presisi:</strong> Terampil mengoperasikan mesin potong blender, mesin potong oxy-fuel (oksigen &amp; asetilen), dan mesin gerinda tangan untuk persiapan bevel plat.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Pembacaan Blueprint &amp; Drawing:</strong> Menganalisis instruksi gambar teknik kerja dan simbol-simbol pengelasan standar internasional.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Inspeksi Visual &amp; Perbaikan (Repair):</strong> Melakukan identifikasi visual terhadap cacat terak terperangkap (slag inclusion), undercut, atau incomplete penetration dan prosedur repair sesuai WPS.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-tags-row">
+          <span class="badge badge-lime">Welding 3G SMAW</span>
+          <span class="badge badge-cyan">BNSP Certified</span>
+          <span class="badge badge-gray">AWS Standard</span>
+          <span class="badge badge-gray">Oxy-Fuel Cutting</span>
+          <span class="badge badge-emerald">WPS Adherence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">PROYEK FABRIKASI PENGELASAN 3G SMAW</span></div>
+    <div class="footer-right"><span>PPKD Jakarta Timur • Sertifikasi BNSP 2026</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 7: PROJECT 3 - QUALITY CONTROL (FUTABA NUSAPERSADA) -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> PROYEK QUALITY CONTROL OTOMOTIF</div>
+      <h2 class="slide-title">Quality Control Komponen Otomotif <span class="cyan">(Knalpot &amp; Exhaust)</span></h2>
+    </div>
+    <div class="slide-index-pill">07 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="project-two-col">
+      <div class="project-img-box">
+        <img src="public/assets/optimized/Nusapersada.jpg" alt="Quality Control Project">
+        <div class="project-img-badge">PT. KOMPONEN FUTABA NUSAPERSADA</div>
+      </div>
+
+      <div class="project-details">
+        <div>
+          <div class="proj-meta-bar">
+            <div class="proj-meta-pill">Peran: <strong>Quality Control (QC)</strong></div>
+            <div class="proj-meta-pill">Perusahaan: <strong>PT. Komponen Futaba Nusapersada</strong></div>
+            <div class="proj-meta-pill">Periode: <strong>Juli - Okt 2026</strong></div>
+            <div class="proj-meta-pill">Fokus: <strong>Komponen Knalpot Otomotif</strong></div>
+          </div>
+
+          <div class="proj-desc-box">
+            Bertanggung jawab penuh atas inspeksi mutu manufaktur komponen otomotif (exhaust system / knalpot) di jalur produksi pabrik, memverifikasi kesesuaian dimensi dengan gambar kerja teknik, serta memastikan kepatuhan standar toleransi presisi dan keselamatan kerja K3.
+          </div>
+
+          <div class="proj-highlights-list">
+            <div class="proj-highlight-item">
+              <div class="proj-bullet" style="color: #38bdf8; border-color: #38bdf8; background: rgba(56, 189, 248, 0.15);">✓</div>
+              <div>
+                <strong>Pengukuran Alat Ukur Presisi:</strong> Terampil mengoperasikan Go/No-Go Gauge untuk cek diameter pipa, Feeler Gauge untuk celah baja, dan Caliper (Jangka Sorong) digital/manual.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet" style="color: #38bdf8; border-color: #38bdf8; background: rgba(56, 189, 248, 0.15);">✓</div>
+              <div>
+                <strong>Minimalkan Produk NG (Not Good):</strong> Menganalisis blueprint kerja untuk mendeteksi deviasi geometri tekukan pipa knalpot dan mencegah produk cacat lolos ke assembling.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet" style="color: #38bdf8; border-color: #38bdf8; background: rgba(56, 189, 248, 0.15);">✓</div>
+              <div>
+                <strong>Inspeksi Visual Sambungan Las:</strong> Memeriksa keutuhan manik las hasil pengelasan robotik dan manual dari cacat pinhole, spatter berlebih, atau keretakan sambungan.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet" style="color: #38bdf8; border-color: #38bdf8; background: rgba(56, 189, 248, 0.15);">✓</div>
+              <div>
+                <strong>Disiplin 5R/5S &amp; Budaya K3:</strong> Mempertahankan lingkungan kerja bersih, tertib, dan aman guna meningkatkan efisiensi lini produksi pabrik setiap shift kerja.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-tags-row">
+          <span class="badge badge-cyan">Quality Control</span>
+          <span class="badge badge-lime">Go/No-Go Gauge</span>
+          <span class="badge badge-cyan">Feeler Gauge</span>
+          <span class="badge badge-gray">Caliper Measurement</span>
+          <span class="badge badge-emerald">5R / 5S Culture</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">INSPEKSI QUALITY CONTROL OTOMOTIF</span></div>
+    <div class="footer-right"><span>PT. Komponen Futaba Nusapersada • 0 Defect Goal</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 8: PROJECT 4 - STORE LEADER PSTORE TARAKAN -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> LEADERSHIP &amp; RETAIL OPERATIONS</div>
+      <h2 class="slide-title">Leader Cabang Pstore Tarakan <span class="lime">&amp; Manajemen Toko</span></h2>
+    </div>
+    <div class="slide-index-pill">08 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="project-two-col">
+      <div class="project-img-box">
+        <img src="public/assets/optimized/Tarakan.jpg" alt="Pstore Tarakan">
+        <div class="project-img-badge">PT. PUTRA SIREGAR MERAKYAT</div>
+      </div>
+
+      <div class="project-details">
+        <div>
+          <div class="proj-meta-bar">
+            <div class="proj-meta-pill">Peran: <strong>Store Leader</strong></div>
+            <div class="proj-meta-pill">Perusahaan: <strong>PT. Putra Siregar Merakyat</strong></div>
+            <div class="proj-meta-pill">Lokasi: <strong>Tarakan, Kalimantan Utara</strong></div>
+            <div class="proj-meta-pill">Periode: <strong>Januari - Juli 2025</strong></div>
+          </div>
+
+          <div class="proj-desc-box">
+            Ditugaskan langsung oleh manajemen pusat untuk merintis, membangun, dan membuka cabang Pstore baru dari nol (ground zero) di Kota Tarakan, Kalimantan Utara. Bertanggung jawab penuh memimpin seluruh operasional toko, manajemen staf, kontrol inventaris, hingga perancangan strategi pemasaran regional.
+          </div>
+
+          <div class="proj-highlights-list">
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Membangun Cabang Dari Nol:</strong> Menyiapkan layout toko, perekrutan &amp; pelatihan tim frontliner/kasir, perizinan operasional, dan sistem administrasi retail cabang.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Rekor Omzet Harian Rp100 Juta:</strong> Berhasil merancang strategi bundling promo, flash sale pembukaan, dan aktivasi penjualan hingga mencetak rekor penjualan harian Rp100.000.000,-.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Kemitraan Media &amp; Public Relations:</strong> Menggandeng media lokal, komunitas anak muda, serta selebritas daerah Tarakan untuk mendongkrak exposure brand.
+              </div>
+            </div>
+            <div class="proj-highlight-item">
+              <div class="proj-bullet">✓</div>
+              <div>
+                <strong>Kontrol Inventaris &amp; Sosmed:</strong> Mengelola stok ribuan unit gadget bernilai tinggi tanpa selisih (zero variance) dan mengelola akun TikTok &amp; Instagram cabang.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-tags-row">
+          <span class="badge badge-amber">Store Leadership</span>
+          <span class="badge badge-lime">Target Rp100 Juta/Hari</span>
+          <span class="badge badge-cyan">Inventory Control</span>
+          <span class="badge badge-gray">Public Relations</span>
+          <span class="badge badge-emerald">Branch Operations</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">LEADERSHIP CABANG RETAIL</span></div>
+    <div class="footer-right"><span>Pstore Tarakan • PT. Putra Siregar Merakyat</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 9: PROJECT 5 & 6 - SALES RETAIL & HYROX EVENT -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> OPERASIONAL RETAIL &amp; EVENT INTERNASIONAL</div>
+      <h2 class="slide-title">Sales Marketing Retail <span class="lime">&amp; Operasional Event Skala Besar</span></h2>
+    </div>
+    <div class="slide-index-pill">09 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="pair-grid">
+      <!-- Pair 1: Sales Marketing Depok -->
+      <div class="pair-card">
+        <div>
+          <div class="pair-card-img">
+            <img src="public/assets/optimized/Sales.jpg" alt="Sales Marketing">
+            <div style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); padding: 4px 12px; border-radius: 9999px; font-size: 11px; font-weight: 700; color: #a6f30d; border: 1px solid #a6f30d;">
+              PT. PUTRA SIREGAR MERAKYAT
+            </div>
+          </div>
+          <h3 class="pair-card-title">Sales Marketing &amp; Manajemen Inventaris</h3>
+          <div style="font-size: 13px; color: #94a3b8; margin-bottom: 12px; display: flex; gap: 12px;">
+            <span>📍 Depok, Jawa Barat</span>
+            <span>•</span>
+            <span>📅 2022 - 2023</span>
+          </div>
+          <p class="pair-card-desc">
+            Mengorganisir dan mengelola inventaris multibidang bernilai tinggi secara akurat, mencatat administrasi omzet dan arus keuangan, mengawasi kepatuhan anggaran proyek, membangun komunikasi kuat dengan konsumen retail, serta merancang konten promosi media sosial untuk menaikkan volume penjualan.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="badge badge-lime">Sales Marketing</span>
+          <span class="badge badge-cyan">Inventory Control</span>
+          <span class="badge badge-gray">Financial Admin</span>
+          <span class="badge badge-gray">Customer Loyalty</span>
+        </div>
+      </div>
+
+      <!-- Pair 2: Hyrox Event -->
+      <div class="pair-card">
+        <div>
+          <div class="pair-card-img">
+            <img src="public/assets/optimized/HYROX.jpg" alt="Hyrox Jakarta">
+            <div style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); padding: 4px 12px; border-radius: 9999px; font-size: 11px; font-weight: 700; color: #38bdf8; border: 1px solid #38bdf8;">
+              HYROX JAKARTA 2026
+            </div>
+          </div>
+          <h3 class="pair-card-title">Crew Shopkeeper Event Internasional Hyrox</h3>
+          <div style="font-size: 13px; color: #94a3b8; margin-bottom: 12px; display: flex; gap: 12px;">
+            <span>📍 Jakarta, Indonesia</span>
+            <span>•</span>
+            <span>📅 Juni 2026</span>
+          </div>
+          <p class="pair-card-desc">
+            Bertanggung jawab penuh atas manajemen logistik toko merchandise resmi ajang kejuaraan fitness racing internasional bergengsi Hyrox Jakarta 2026. Melayani ribuan pengunjung dan atlet mancanegara, mengendalikan stok official apparel, mengelola transaksi kasir, serta koordinasi alur kerumunan massa event.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="badge badge-cyan">Event Operations</span>
+          <span class="badge badge-amber">Hyrox International</span>
+          <span class="badge badge-gray">Merchandise Store</span>
+          <span class="badge badge-gray">Crowd Control</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">RETAIL &amp; EVENT MANAGEMENT</span></div>
+    <div class="footer-right"><span>Pstore Depok • Hyrox Jakarta International Championship</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 10: PROJECT 7 & 8 - KIMIA FARMA & BKKBN -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> MEDIA KREATIF &amp; DOKUMENTASI KORPORAT</div>
+      <h2 class="slide-title">Produksi Media Kreatif <span class="lime">&amp; Dokumenter Korporat</span></h2>
+    </div>
+    <div class="slide-index-pill">10 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="pair-grid">
+      <!-- Pair 1: Kimia Farma -->
+      <div class="pair-card">
+        <div>
+          <div class="pair-card-img">
+            <img src="public/assets/optimized/Kimia-Farma.jpg" alt="Kimia Farma Media">
+            <div style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); padding: 4px 12px; border-radius: 9999px; font-size: 11px; font-weight: 700; color: #34d399; border: 1px solid #34d399;">
+              PT. KIMIA FARMA APOTEK
+            </div>
+          </div>
+          <h3 class="pair-card-title">Media Kreatif &amp; People Experience</h3>
+          <div style="font-size: 13px; color: #94a3b8; margin-bottom: 12px; display: flex; gap: 12px;">
+            <span>📍 Kantor Pusat, Jakarta</span>
+            <span>•</span>
+            <span>📅 Mei - Agust 2024</span>
+          </div>
+          <p class="pair-card-desc">
+            Memproduksi video TikTok kreatif viral akun <em>CeritaPharmacytizen</em>, merancang materi desain grafis feed Instagram <em>Genbi_KFA</em>, photoshoot foto profil karyawan berseragam resmi di berbagai outlet apotek, serta tim dokumentasi video/foto acara nasional <em>Pharmacist Training</em> dan <em>Kimia Farma Mengajar 2024</em>.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="badge badge-emerald">TikTok Content</span>
+          <span class="badge badge-lime">Instagram Graphic</span>
+          <span class="badge badge-gray">Corporate Video</span>
+          <span class="badge badge-gray">People Experience</span>
+        </div>
+      </div>
+
+      <!-- Pair 2: BKKBN -->
+      <div class="pair-card">
+        <div>
+          <div class="pair-card-img">
+            <img src="public/assets/optimized/BKKBN.jpg" alt="BKKBN Media">
+            <div style="position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.8); padding: 4px 12px; border-radius: 9999px; font-size: 11px; font-weight: 700; color: #38bdf8; border: 1px solid #38bdf8;">
+              BADAN KEPENDUDUKAN &amp; KELUARGA BERENCANA NASIONAL
+            </div>
+          </div>
+          <h3 class="pair-card-title">Video Dokumenter Dithanlan &amp; Desain Visual</h3>
+          <div style="font-size: 13px; color: #94a3b8; margin-bottom: 12px; display: flex; gap: 12px;">
+            <span>📍 Jakarta, Indonesia</span>
+            <span>•</span>
+            <span>📅 Sept - Nov 2021</span>
+          </div>
+          <p class="pair-card-desc">
+            Memproduksi dan menyunting serial video edukasi dokumenter pada channel YouTube resmi Dithanlan BKKBN, merancang materi grafis promosi media sosial institusi, menyusun rangkuman notulensi rapat eksekutif harian via Zoom, serta mengikuti tugas dinas resmi pendampingan pimpinan ke Walikota Depok.
+          </p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="badge badge-cyan">Documentary Video</span>
+          <span class="badge badge-gray">YouTube Production</span>
+          <span class="badge badge-gray">Government Media</span>
+          <span class="badge badge-gray">Executive Minutes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">CREATIVE MEDIA &amp; CORPORATE COMMUNICATIONS</span></div>
+    <div class="footer-right"><span>PT. Kimia Farma Apotek • BKKBN RI</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 11: WORK EXPERIENCE TIMELINE -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> PENGALAMAN KERJA • CAREER HISTORY</div>
+      <h2 class="slide-title">Rekam Jejak Karier <span class="lime">Profesional Multidisiplin</span></h2>
+    </div>
+    <div class="slide-index-pill">11 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="timeline-deck">
+      <!-- 1 -->
+      <div class="timeline-row">
+        <div class="tl-period">Okt - Nov 2026</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Pelatihan Bahasa Inggris (CPMI)</div>
+          <div class="tl-company">Universitas Binawan</div>
+        </div>
+        <div class="tl-desc">
+          Pelatihan resmi bahasa Inggris bagi Calon Pekerja Migran Indonesia (CPMI): percakapan kerja, perkenalan diri secara percaya diri, tata bahasa (grammar), kelancaran (fluency), listening, dan reading.
+        </div>
+        <div class="tl-type-badge"><span style="color: #38bdf8;">●</span> Bahasa &amp; Komunikasi</div>
+      </div>
+
+      <!-- 2 -->
+      <div class="timeline-row">
+        <div class="tl-period">Okt - Nov 2026</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Welder Plat 3G GMAW</div>
+          <div class="tl-company">BP3MI DKI Jakarta</div>
+        </div>
+        <div class="tl-desc">
+          Teknik pengelasan GMAW (MIG/MAG) plat sambungan fillet 1F-3F dan groove 1G-3G standar AWS D1.1, penyetelan voltase, kalibrasi wire feed speed, regulasi shielding gas, dan sertifikasi BNSP.
+        </div>
+        <div class="tl-type-badge"><span style="color: #a6f30d;">●</span> Fabrikasi / Las Industri</div>
+      </div>
+
+      <!-- 2 -->
+      <div class="timeline-row">
+        <div class="tl-period">06 Juli - 03 Okt 2026</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Quality Control (QC)</div>
+          <div class="tl-company">PT. Komponen Futaba Nusapersada</div>
+        </div>
+        <div class="tl-desc">
+          Inspeksi mutu knalpot otomotif dengan Go/No-Go Gauge, Feeler Gauge, dan Caliper. Analisis blueprint drawing untuk meminimalkan produk NG, inspeksi visual sambungan las, serta kepatuhan 5R &amp; K3.
+        </div>
+        <div class="tl-type-badge"><span style="color: #38bdf8;">●</span> Manufaktur Otomotif</div>
+      </div>
+
+      <!-- 3 -->
+      <div class="timeline-row">
+        <div class="tl-period">06 Apr - 19 Juni 2026</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Welder Plat 3G SMAW</div>
+          <div class="tl-company">BP3MI / PPKD Jakarta Timur</div>
+        </div>
+        <div class="tl-desc">
+          Pengelasan SMAW plat 1F-3F fillet dan 1G-3G groove joint standar AWS. Pengoperasian mesin potong blender, oxy-fuel cutting, gerinda, serta perbaikan cacat las sesuai WPS resmi BNSP.
+        </div>
+        <div class="tl-type-badge"><span style="color: #a6f30d;">●</span> Fabrikasi / Las Industri</div>
+      </div>
+
+      <!-- 4 -->
+      <div class="timeline-row">
+        <div class="tl-period">20 Jan - 20 Juli 2025</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Leader Store</div>
+          <div class="tl-company">PT. Putra Siregar Merakyat (Tarakan)</div>
+        </div>
+        <div class="tl-desc">
+          Membangun cabang baru Pstore dari nol di Tarakan, memimpin operasional toko, mengendalikan stok inventaris, serta mencetak rekor penjualan harian mencapai Rp100.000.000,-.
+        </div>
+        <div class="tl-type-badge"><span style="color: #fbbf24;">●</span> Retail &amp; Operations</div>
+      </div>
+
+      <!-- 5 -->
+      <div class="timeline-row">
+        <div class="tl-period">17 Mei - 23 Agust 2024</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Culture &amp; People Experience</div>
+          <div class="tl-company">PT. Kimia Farma Apotek</div>
+        </div>
+        <div class="tl-desc">
+          Produksi video TikTok CeritaPharmacytizen, desain media sosial Genbi_KFA, photoshoot karyawan seragam resmi, serta dokumentasi acara Pharmacist Training &amp; Kimia Farma Mengajar 2024.
+        </div>
+        <div class="tl-type-badge"><span style="color: #34d399;">●</span> Creative Media &amp; HC</div>
+      </div>
+
+      <!-- 6 -->
+      <div class="timeline-row">
+        <div class="tl-period">25 Feb 2022 - 03 Mar 2023</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Sales Marketing</div>
+          <div class="tl-company">PT. Putra Siregar Merakyat (Depok)</div>
+        </div>
+        <div class="tl-desc">
+          Pengelolaan inventaris retail bernilai tinggi, pencatatan administrasi keuangan dan omzet, pengawasan anggaran kegiatan, komunikasi retensi konsumen, dan perancangan materi promosi sosial media.
+        </div>
+        <div class="tl-type-badge"><span style="color: #fbbf24;">●</span> Sales &amp; Inventory</div>
+      </div>
+
+      <!-- 7 -->
+      <div class="timeline-row">
+        <div class="tl-period">06 Sept - 03 Des 2021</div>
+        <div class="tl-role-box">
+          <div class="tl-role">Praktek Kerja Lapangan (PKL)</div>
+          <div class="tl-company">BKKBN Republik Indonesia</div>
+        </div>
+        <div class="tl-desc">
+          Produksi serial video edukasi dokumenter channel YouTube Dithanlan, perancangan aset grafis media sosial, notulen rapat koordinasi harian eksekutif Zoom, dan dinas resmi ke Walikota Depok.
+        </div>
+        <div class="tl-type-badge"><span style="color: #cbd5e1;">●</span> Government Media</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">CHRONOLOGICAL CAREER TIMELINE</span></div>
+    <div class="footer-right"><span>6+ Tahun Total Pengalaman Profesional Teruji</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 12: EDUCATION & ORGANIZATIONAL ROLES -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> PENDIDIKAN &amp; ORGANISASI • BACKGROUND</div>
+      <h2 class="slide-title">Fondasi Akademis &amp; <span class="lime">Pengalaman Lapangan</span></h2>
+    </div>
+    <div class="slide-index-pill">12 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <!-- Left: Pendidikan -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 18px;">
+      <h3 style="font-size: 21px; font-weight: 700; color: #a6f30d; display: flex; align-items: center; gap: 10px;">
+        <span>🎓</span> PENDIDIKAN FORMAL
+      </h3>
+
+      <div class="bento" style="padding: 22px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <div>
+            <h4 style="font-size: 21px; font-weight: 800; color: #ffffff;">Universitas Indraprasta PGRI</h4>
+            <div style="font-size: 15px; font-weight: 700; color: #38bdf8; margin-top: 4px;">S1 Desain Komunikasi Visual (S.Ds)</div>
+          </div>
+          <span class="badge badge-lime">IPK 2.75</span>
+        </div>
+        <div style="font-size: 13px; color: #94a3b8; margin-bottom: 10px;">📅 2017 - 2023 • Jakarta, Indonesia</div>
+        <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">
+          Mendalami bidang komunikasi visual kreatif, desain grafis terapan, branding identitas visual korporat, produksi dan penyuntingan video profesional, fotografi, estetika komposisi, serta multimedia digital storytelling.
+        </p>
+      </div>
+
+      <div class="bento" style="padding: 22px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+          <div>
+            <h4 style="font-size: 19px; font-weight: 800; color: #ffffff;">MA AL - FATHIYAH</h4>
+            <div style="font-size: 14px; font-weight: 700; color: #cbd5e1; margin-top: 4px;">Ilmu Pengetahuan Sosial (IPS)</div>
+          </div>
+          <span class="badge badge-gray">Nilai Akhir 48.5</span>
+        </div>
+        <div style="font-size: 13px; color: #94a3b8; margin-bottom: 10px;">📅 2014 - 2017 • Jakarta, Indonesia</div>
+        <p style="font-size: 14px; line-height: 1.6; color: #cbd5e1;">
+          Lulus dengan fondasi kuat dalam ilmu komunikasi sosial, dinamika interaksi publik, pembentukan karakter kepemimpinan, dan kerja sama tim secara terorganisir.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right: Organisasi & Event -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+      <h3 style="font-size: 21px; font-weight: 700; color: #38bdf8; display: flex; align-items: center; gap: 10px;">
+        <span>🏆</span> ORGANISASI &amp; EVENT SKALA BESAR
+      </h3>
+
+      <div class="bento" style="padding: 15px 18px; display: flex; gap: 16px; align-items: center;">
+        <div style="font-size: 22px; font-weight: 900; color: #a6f30d; width: 60px; flex-shrink: 0;">2026</div>
+        <div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #ffffff;">Crew Shopkeeper — Hyrox Jakarta</div>
+          <div style="font-size: 13px; color: #cbd5e1; margin-top: 2px;">Manajemen toko apparel merchandise resmi, kontrol stok inventaris, dan pelayanan peserta event fitness racing internasional.</div>
+        </div>
+      </div>
+
+      <div class="bento" style="padding: 15px 18px; display: flex; gap: 16px; align-items: center;">
+        <div style="font-size: 22px; font-weight: 900; color: #38bdf8; width: 60px; flex-shrink: 0;">2023</div>
+        <div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #ffffff;">Crew Floor &amp; Ops — Pesta Semalam Minggu Vol.4</div>
+          <div style="font-size: 13px; color: #cbd5e1; margin-top: 2px;">Floor management, koordinasi alur massa puluhan ribu penonton festival musik, dan dukungan operasional backstage artis.</div>
+        </div>
+      </div>
+
+      <div class="bento" style="padding: 15px 18px; display: flex; gap: 16px; align-items: center;">
+        <div style="font-size: 22px; font-weight: 900; color: #fbbf24; width: 60px; flex-shrink: 0;">2019</div>
+        <div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #ffffff;">Media &amp; Documentation Team — Depok 10K Run</div>
+          <div style="font-size: 13px; color: #cbd5e1; margin-top: 2px;">Peliputan komprehensif ajang lari nasional, fotografi aksi olahraga cepat, dan publikasi media sosial resmi kejuaraan.</div>
+        </div>
+      </div>
+
+      <div class="bento" style="padding: 15px 18px; display: flex; gap: 16px; align-items: center;">
+        <div style="font-size: 22px; font-weight: 900; color: #34d399; width: 60px; flex-shrink: 0;">2018</div>
+        <div>
+          <div style="font-size: 16.5px; font-weight: 700; color: #ffffff;">Media Exhibition Team — Samahita The 3rd Photobook Expo</div>
+          <div style="font-size: 13px; color: #cbd5e1; margin-top: 2px;">Kurasi dokumentasi visual pameran photobook fotografi, katalogisasi karya peserta, serta hubungan komunikasi media publik.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">PENDIDIKAN &amp; REKAM JEJAK ORGANISASI</span></div>
+    <div class="footer-right"><span>S1 Desain Komunikasi Visual • Universitas Indraprasta PGRI</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 13: OFFICIAL CERTIFICATIONS & LICENSES -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> LISENSI &amp; SERTIFIKASI KOMPETENSI</div>
+      <h2 class="slide-title">Sertifikasi Resmi BNSP &amp; <span class="lime">Lisensi Keahlian</span></h2>
+    </div>
+    <div class="slide-index-pill">13 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="grid-certs">
+      <!-- 1 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">🎖️</div>
+            <span class="badge badge-lime">BNSP RESMI</span>
+          </div>
+          <h4 class="cert-title">Plate Welder : 3G GMAW</h4>
+          <div class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2026</strong></span>
+          <span style="color: #a6f30d; font-weight: 700;">Standar AWS</span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">⚙️</div>
+            <span class="badge badge-cyan">KEJURUAN</span>
+          </div>
+          <h4 class="cert-title">Pelatihan Kejuruan Las GMAW 3G</h4>
+          <div class="cert-issuer">BP3MI DKI Jakarta</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2026</strong></span>
+          <span style="color: #38bdf8; font-weight: 700;">Industri Las</span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">🎖️</div>
+            <span class="badge badge-lime">BNSP RESMI</span>
+          </div>
+          <h4 class="cert-title">Plate Welder : 3G SMAW</h4>
+          <div class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2026</strong></span>
+          <span style="color: #a6f30d; font-weight: 700;">Standar AWS</span>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">⚙️</div>
+            <span class="badge badge-cyan">KEJURUAN</span>
+          </div>
+          <h4 class="cert-title">Pelatihan Kejuruan Las SMAW 3G</h4>
+          <div class="cert-issuer">PPKD Jakarta Timur</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2026</strong></span>
+          <span style="color: #38bdf8; font-weight: 700;">Industri Las</span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">📋</div>
+            <span class="badge badge-amber">BNSP RESMI</span>
+          </div>
+          <h4 class="cert-title">Staff Administrasi SDM</h4>
+          <div class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2025</strong></span>
+          <span style="color: #fbbf24; font-weight: 700;">Manajemen SDM</span>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">🏢</div>
+            <span class="badge badge-emerald">KORPORAT</span>
+          </div>
+          <h4 class="cert-title">Culture &amp; People Experience</h4>
+          <div class="cert-issuer">PT. Kimia Farma Apotek</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2024</strong></span>
+          <span style="color: #34d399; font-weight: 700;">Creative Media</span>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">🎓</div>
+            <span class="badge badge-cyan">SERTIFIKAT RESMI</span>
+          </div>
+          <h4 class="cert-title">Bahasa Inggris Kerja (CPMI)</h4>
+          <div class="cert-issuer">Universitas Binawan (Jakarta)</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2026</strong></span>
+          <span style="color: #38bdf8; font-weight: 700;">English CPMI</span>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="cert-card">
+        <div>
+          <div class="cert-icon-row">
+            <div class="cert-icon">🏛️</div>
+            <span class="badge badge-gray">KREDENSIAL</span>
+          </div>
+          <h4 class="cert-title">Media, Humas &amp; Event</h4>
+          <div class="cert-issuer">BKKBN RI, Depok 10K &amp; Samahita</div>
+        </div>
+        <div class="cert-footer">
+          <span style="color: #cbd5e1;">Tahun: <strong>2018 - 2021</strong></span>
+          <span style="color: #cbd5e1; font-weight: 700;">Humas &amp; Media</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">LISENSI &amp; SERTIFIKASI PROFESI RESMI</span></div>
+    <div class="footer-right"><span>BNSP • BP3MI • PPKD • Kemenaker • Kimia Farma • BKKBN</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 14: CLOSING & CONTACT -->
+<div class="slide">
+  <div class="slide-header">
+    <div class="slide-header-left">
+      <div class="category-tag"><span class="category-dot"></span> KONTAK &amp; KOLABORASI • GET IN TOUCH</div>
+      <h2 class="slide-title">Mari Membangun Sinergi &amp; <span class="lime">Prestasi Bersama</span></h2>
+    </div>
+    <div class="slide-index-pill">14 / 14</div>
+  </div>
+
+  <div class="slide-body">
+    <div class="closing-container">
+      <!-- Left: Value Proposition & Channels -->
+      <div class="closing-left">
+        <div class="closing-quote">
+          "Siap menghadirkan <span>ketelitian teknis pengelasan &amp; QC manufaktur</span>, integritas operasional, serta <span>daya dorong kepemimpinan komersial</span> untuk kemajuan perusahaan Anda."
+        </div>
+        <div class="closing-desc">
+          Terbuka untuk posisi Welder 3G GMAW/SMAW, Quality Control (QC) Inspector, Store Leader / Retail Operations Supervisor, serta peran strategis lainnya di industri manufaktur, pertambangan, fabrikasi, konstruksi, dan retail modern di seluruh Indonesia.
+        </div>
+
+        <div class="contact-channels-grid">
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon">✉️</div>
+            <div class="contact-channel-info">
+              <span class="contact-channel-label">Email Resmi</span>
+              <span class="contact-channel-val">mrpai267@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon">📱</div>
+            <div class="contact-channel-info">
+              <span class="contact-channel-label">WhatsApp / Telepon</span>
+              <span class="contact-channel-val">+62 896-2267-1182</span>
+            </div>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon">💼</div>
+            <div class="contact-channel-info">
+              <span class="contact-channel-label">LinkedIn Profil</span>
+              <span class="contact-channel-val">muhamad-rivai-985662290</span>
+            </div>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="contact-channel-icon">📍</div>
+            <div class="contact-channel-info">
+              <span class="contact-channel-label">Domisili</span>
+              <span class="contact-channel-val">Jakarta, Indonesia (Siap Penempatan)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Card Badge & Photo -->
+      <div class="closing-right">
+        <div class="closing-card">
+          <div class="closing-avatar">
+            <img src="public/assets/optimized/Foto-Profile-1.jpg" alt="Muhamad Rivai">
+          </div>
+          <h3 class="closing-name">MUHAMAD RIVAI</h3>
+          <div class="closing-sub">Welder 3G • Quality Control • Store Leader</div>
+          <p style="font-size: 13.5px; color: #94a3b8; line-height: 1.5; margin-bottom: 16px;">
+            S1 Desain Komunikasi Visual • Bersertifikat BNSP Resmi (Plate Welder 3G SMAW &amp; GMAW) • Kepatuhan Standar AWS, WPS, 5R &amp; K3.
+          </p>
+          <div class="closing-cta-btn">
+            <span>📞 HUBUNGI SEGERA: +62 896-2267-1182</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <div class="footer-left"><span>MUHAMAD RIVAI</span><span>•</span><span class="accent">TERIMA KASIH • PORTOFOLIO SELESAI</span></div>
+    <div class="footer-right"><span>mrpai267@gmail.com</span><span>•</span><span>Jakarta, Indonesia</span><span>•</span><span>2026</span></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -10,6 +10,7 @@ import {
   Megaphone01Icon,
 } from 'hugeicons-react';
 import { BlurReveal, BlurWords } from './ui/BlurReveal';
+import { t, isEnglish } from '@/lib/i18n';
 
 const SERVICE_CONFIGS = {
   'visual-design': {
@@ -32,6 +33,11 @@ const SERVICE_CONFIGS = {
     color: '#FF5722',
     glow: 'rgba(255, 87, 34, 0.45)',
   },
+  'welding-gmaw': {
+    icon: FireIcon,
+    color: '#FB923C',
+    glow: 'rgba(251, 146, 60, 0.45)',
+  },
   'branch-management': {
     icon: Store01Icon,
     color: '#EAB308',
@@ -42,10 +48,15 @@ const SERVICE_CONFIGS = {
     color: '#EC4899',
     glow: 'rgba(236, 72, 153, 0.45)',
   },
+  'english-communication': {
+    icon: Megaphone01Icon,
+    color: '#38BDF8',
+    glow: 'rgba(56, 189, 248, 0.45)',
+  },
 };
 
 export default function BentoGridRow2({ data, lang }) {
-  const isEn = lang === 'en';
+  const isEn = isEnglish(lang);
   const services = data?.services || [];
 
   return (
@@ -76,8 +87,9 @@ export default function BentoGridRow2({ data, lang }) {
             glow: 'rgba(166, 243, 13, 0.4)',
           };
           const IconComponent = conf.icon;
-          const title = srv.title?.[lang] || srv.title?.id_lang || srv.title?.en;
-          const desc = srv.description?.[lang] || srv.description?.id_lang || srv.description?.en;
+          const title = t(srv.title, lang);
+          const desc = t(srv.description, lang);
+          const statText = t(srv.stat, lang);
 
           return (
             <BlurReveal key={srv.id || idx} delay={0.1 + idx * 0.08} duration={0.65}>
@@ -111,7 +123,7 @@ export default function BentoGridRow2({ data, lang }) {
                     </div>
 
                     <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-white/15 text-white border border-white/10">
-                      {srv.stat}
+                      {statText}
                     </span>
                   </div>
 

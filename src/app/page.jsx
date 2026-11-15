@@ -18,6 +18,27 @@ export default function Home() {
   const [theme, setTheme] = useState('dark');
   const [cmsModalOpen, setCmsModalOpen] = useState(false);
 
+  // Load language preference from localStorage on mount
+  useEffect(() => {
+    try {
+      const savedLang = localStorage.getItem('portfolio_lang');
+      if (savedLang === 'en' || savedLang === 'id_lang') {
+        setLang(savedLang);
+      }
+    } catch (e) {
+      // Ignore localStorage errors
+    }
+  }, []);
+
+  const handleSetLang = (newLang) => {
+    setLang(newLang);
+    try {
+      localStorage.setItem('portfolio_lang', newLang);
+    } catch (e) {
+      // Ignore localStorage errors
+    }
+  };
+
   // Sync with runtime json if updated
   useEffect(() => {
     fetch('/data/portfolio-data.json')
@@ -39,7 +60,7 @@ export default function Home() {
       <Navbar
         data={portfolioData}
         lang={lang}
-        setLang={setLang}
+        setLang={handleSetLang}
         theme={theme}
         setTheme={setTheme}
         onOpenCms={() => setCmsModalOpen(true)}

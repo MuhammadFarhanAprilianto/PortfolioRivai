@@ -3,6 +3,8 @@
 Folder ini disiapkan untuk menyimpan seluruh file foto, gambar (PNG, JPG, WebP), atau dokumen PDF sertifikat dan lisensi kompetensi Anda:
 
 ### 📁 Penempatan File yang Disarankan:
+- `bnsp-welder-3g-gmaw.pdf` / `bnsp-welder-3g-gmaw.jpg` -> Sertifikat BNSP Plate Welder 3G GMAW (2026)
+- `bp3mi-welder-3g-gmaw.pdf` / `bp3mi-welder-3g-gmaw.jpg` -> Sertifikat BP3MI DKI Jakarta Pelatihan Kejuruan Las GMAW 3G (2026)
 - `bnsp-welder-3g.pdf` / `bnsp-welder-3g.jpg` -> Sertifikat BNSP Plate Welder 3G SMAW (2026)
 - `bnsp-admin-sdm.pdf` / `bnsp-admin-sdm.jpg` -> Sertifikat BNSP Staff Administrasi SDM (2025)
 - `kimia-farma.pdf` / `kimia-farma.jpg` -> Surat/Sertifikat Pelaksana Culture & People Experience (2024)

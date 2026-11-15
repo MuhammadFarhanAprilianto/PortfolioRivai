@@ -10,10 +10,11 @@ import {
   Calendar01Icon,
 } from 'hugeicons-react';
 import { BlurReveal, BlurWords } from './ui/BlurReveal';
+import { t, tArr, isEnglish } from '@/lib/i18n';
 
 export default function EducationExperienceSection({ data, lang }) {
   const [activeTab, setActiveTab] = useState('experience'); // 'experience' | 'education' | 'organizations'
-  const isEn = lang === 'en';
+  const isEn = isEnglish(lang);
 
   const experiences = data?.experience || [];
   const educations = data?.education || [];
@@ -86,46 +87,50 @@ export default function EducationExperienceSection({ data, lang }) {
       {/* Tab Content 1: Work Experience Timeline */}
       {activeTab === 'experience' && (
         <div className="space-y-6">
-          {experiences.map((exp, idx) => (
-            <BlurReveal key={idx} delay={0.1 + idx * 0.08} duration={0.65}>
-              <div
-                className="bento-card p-5 sm:p-7 md:p-8 space-y-4 border border-white/10 group hover:border-[#a6f30d] shadow-lg transition-all"
-              >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div>
-                    <span className="text-xs font-mono font-bold text-[#a6f30d] tracking-wider uppercase">
-                      {exp.period}
-                    </span>
-                    <h3 className="font-questrial font-bold text-xl sm:text-2xl text-white mt-0.5">
-                      {exp.role?.[lang] || exp.role?.en}
-                    </h3>
-                    <div className="flex items-center gap-3 text-xs font-semibold text-white opacity-90 mt-1">
-                      <span>{exp.company}</span>
-                      <span>•</span>
-                      <span className="flex items-center gap-1">
-                        <Location01Icon className="w-3.5 h-3.5 text-[#a6f30d]" />
-                        {exp.location}
+          {experiences.map((exp, idx) => {
+            const expHighlights = tArr(exp.highlights, lang);
+
+            return (
+              <BlurReveal key={idx} delay={0.1 + idx * 0.08} duration={0.65}>
+                <div
+                  className="bento-card p-5 sm:p-7 md:p-8 space-y-4 border border-white/10 group hover:border-[#a6f30d] shadow-lg transition-all"
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                      <span className="text-xs font-mono font-bold text-[#a6f30d] tracking-wider uppercase">
+                        {t(exp.period, lang)}
                       </span>
+                      <h3 className="font-questrial font-bold text-xl sm:text-2xl text-white mt-0.5">
+                        {t(exp.role, lang)}
+                      </h3>
+                      <div className="flex items-center gap-3 text-xs font-semibold text-white opacity-90 mt-1">
+                        <span>{exp.company}</span>
+                        <span>•</span>
+                        <span className="flex items-center gap-1">
+                          <Location01Icon className="w-3.5 h-3.5 text-[#a6f30d]" />
+                          {exp.location}
+                        </span>
+                      </div>
                     </div>
+
+                    <span className="self-start sm:self-center px-3 py-1 rounded-full text-xs font-bold bg-white/15 text-white border border-white/15">
+                      {t(exp.type, lang)}
+                    </span>
                   </div>
 
-                  <span className="self-start sm:self-center px-3 py-1 rounded-full text-xs font-bold bg-white/15 text-white border border-white/15">
-                    {exp.type}
-                  </span>
+                  {/* Responsibilities & Achievements List */}
+                  <div className="pt-2 space-y-2 border-t border-white/10">
+                    {expHighlights.map((point, pIdx) => (
+                      <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-white leading-relaxed opacity-95">
+                        <CheckmarkCircle02Icon className="w-4 h-4 text-[#d4f938] shrink-0 mt-0.5" />
+                        <span>{point}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-
-                {/* Responsibilities & Achievements List */}
-                <div className="pt-2 space-y-2 border-t border-white/10">
-                  {exp.highlights?.map((point, pIdx) => (
-                    <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-white leading-relaxed opacity-95">
-                      <CheckmarkCircle02Icon className="w-4 h-4 text-[#d4f938] shrink-0 mt-0.5" />
-                      <span>{point}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </BlurReveal>
-          ))}
+              </BlurReveal>
+            );
+          })}
         </div>
       )}
 
@@ -153,16 +158,16 @@ export default function EducationExperienceSection({ data, lang }) {
 
                   <div>
                     <span className="text-xs font-mono font-bold text-[#a6f30d]">
-                      {edu.period}
+                      {t(edu.period, lang)}
                     </span>
                     <h3 className="font-questrial font-bold text-xl text-white mt-1">
                       {edu.institution}
                     </h3>
                     <p className="text-sm font-semibold text-white mt-1">
-                      {edu.degree?.[lang] || edu.degree?.en}
+                      {t(edu.degree, lang)}
                     </p>
                     <p className="text-xs text-white opacity-90 mt-2 leading-relaxed">
-                      {edu.description?.[lang] || edu.description?.en}
+                      {t(edu.description, lang)}
                     </p>
                   </div>
                 </div>
@@ -170,7 +175,7 @@ export default function EducationExperienceSection({ data, lang }) {
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold text-white">
                   <span className="text-slate-300">{edu.location}</span>
                   <span className="px-2.5 py-1 rounded bg-white/15 text-white border border-white/10">
-                    {edu.score}
+                    {t(edu.score, lang) || edu.score}
                   </span>
                 </div>
               </div>
@@ -205,13 +210,13 @@ export default function EducationExperienceSection({ data, lang }) {
                     </span>
                   </div>
                   <h4 className="font-questrial font-bold text-base text-white">
-                    {org.role}
+                    {t(org.role, lang)}
                   </h4>
                   <p className="text-xs font-semibold text-white opacity-90">
                     {org.event}
                   </p>
                   <p className="text-xs text-white opacity-80 leading-relaxed pt-1">
-                    {org.description}
+                    {t(org.description, lang)}
                   </p>
                 </div>
               </div>

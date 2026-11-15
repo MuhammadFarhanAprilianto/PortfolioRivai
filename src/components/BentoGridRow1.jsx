@@ -12,15 +12,16 @@ import {
 } from 'hugeicons-react';
 import ThreeDCompetencyIcon from './ui/ThreeDCompetencyIcon';
 import { BlurReveal, BlurWords } from './ui/BlurReveal';
+import { t, isEnglish } from '@/lib/i18n';
 
 export default function BentoGridRow1({ data, lang }) {
-  const isEn = lang === 'en';
+  const isEn = isEnglish(lang);
   const profile = data?.profile || {};
   const stats = data?.stats || [];
   const skills = data?.skills || [];
 
-  const roleText = profile.role?.[lang] || profile.role?.id_lang || profile.role?.en || 'Spesialis Quality Control Industri & Desainer Komunikasi Visual';
-  const summaryText = profile.summary?.[lang] || profile.summary?.id_lang || profile.summary?.en || '';
+  const roleText = t(profile.role, lang) || (isEn ? 'Welder 3G GMAW | Quality Control | Welder 3G SMAW | Store Leader & Marketing' : 'Welder 3G GMAW | Quality Control | Welder 3G SMAW | Leader & Marketing Store');
+  const summaryText = t(profile.summary, lang);
 
   return (
     <section id="about" className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -59,7 +60,7 @@ export default function BentoGridRow1({ data, lang }) {
                   <BlurWords text={profile.name || 'Muhamad Rivai'} duration={0.6} />
                 </h2>
                 <span className="px-2.5 py-1 rounded-md text-[11px] font-bold bg-[#a6f30d]/20 text-[#d4f938] border border-[#a6f30d]/40">
-                  S1 DKV
+                  {t(profile.degreeBadge, lang) || (isEn ? 'B.Des VCD' : 'S1 DKV')}
                 </span>
               </div>
 
@@ -128,10 +129,10 @@ export default function BentoGridRow1({ data, lang }) {
             <BlurReveal key={idx} delay={0.15 + idx * 0.08} duration={0.65}>
               <div className="bento-card p-4 sm:p-4.5 flex flex-col justify-between min-h-[105px] sm:min-h-[115px] border border-white/10 shadow-lg h-full">
                 <span className="font-questrial font-black text-2xl sm:text-3xl text-white tracking-tight leading-none">
-                  {item.value}
+                  {t(item.value, lang)}
                 </span>
                 <span className="text-[11px] sm:text-xs font-medium text-white opacity-85 leading-snug mt-2">
-                  {item.label?.[lang] || item.label?.id_lang || item.label?.en}
+                  {t(item.label, lang)}
                 </span>
               </div>
             </BlurReveal>
@@ -149,7 +150,7 @@ export default function BentoGridRow1({ data, lang }) {
                 </h3>
               </div>
               <span className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
-                {skills.length} Competencies
+                {skills.length} {isEn ? 'Competencies' : 'Kompetensi'}
               </span>
             </div>
 
@@ -166,16 +167,12 @@ export default function BentoGridRow1({ data, lang }) {
                         {s.name}
                       </span>
                       <span className="text-[10px] sm:text-[11px] text-slate-300 truncate block">
-                        {typeof s.category === 'object'
-                          ? (s.category[lang] || s.category.id_lang || s.category.en)
-                          : s.category}
+                        {t(s.category, lang)}
                       </span>
                     </div>
                   </div>
                   <span className="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded bg-white/15 text-white border border-white/10 shrink-0 whitespace-nowrap text-center">
-                    {typeof s.level === 'object'
-                      ? (s.level[lang] || s.level.id_lang || s.level.en)
-                      : s.level}
+                    {t(s.level, lang)}
                   </span>
                 </div>
               ))}

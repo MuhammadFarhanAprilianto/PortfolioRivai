@@ -144,15 +144,35 @@ export default function Navbar({ data, lang, setLang }) {
 
         {/* Right: Available Action Button & Language Switcher */}
         <div className="flex items-center gap-2.5 relative z-10">
-          {/* Language Toggle */}
-          <button
-            onClick={toggleLanguage}
-            className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-full bg-white/5 hover:bg-white/10 text-[11px] font-bold transition-all text-slate-300 hover:text-white border border-white/10 cursor-pointer"
-            title="Switch Language"
-          >
-            <TranslateIcon className="w-3 h-3 text-[#a6f30d]" />
-            <span>{isEn ? 'EN' : 'ID'}</span>
-          </button>
+          {/* Dual Segmented Language Switcher (ID | EN) */}
+          <div className="hidden sm:flex items-center p-0.5 rounded-full bg-white/5 border border-white/15 backdrop-blur-md">
+            <button
+              type="button"
+              onClick={() => setLang('id_lang')}
+              className={cn(
+                'px-2.5 py-1 rounded-full text-[11px] font-black tracking-wider transition-all duration-200 cursor-pointer select-none',
+                !isEn
+                  ? 'bg-[#a6f30d] text-black shadow-sm'
+                  : 'text-slate-400 hover:text-white'
+              )}
+              title="Bahasa Indonesia"
+            >
+              ID
+            </button>
+            <button
+              type="button"
+              onClick={() => setLang('en')}
+              className={cn(
+                'px-2.5 py-1 rounded-full text-[11px] font-black tracking-wider transition-all duration-200 cursor-pointer select-none',
+                isEn
+                  ? 'bg-[#a6f30d] text-black shadow-sm'
+                  : 'text-slate-400 hover:text-white'
+              )}
+              title="English"
+            >
+              EN
+            </button>
+          </div>
 
           {/* Available Pill Capsule */}
           <a
@@ -162,7 +182,7 @@ export default function Navbar({ data, lang, setLang }) {
             <span className="relative flex h-2 w-2">
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.9)]" />
             </span>
-            <span>AVAILABLE</span>
+            <span>{isEn ? 'AVAILABLE' : 'TERSEDIA'}</span>
           </a>
 
           {/* Mobile Menu Toggle Button */}
@@ -206,22 +226,45 @@ export default function Navbar({ data, lang, setLang }) {
               ))}
             </div>
 
-            <div className="pt-2.5 border-t border-white/10 flex items-center justify-between gap-3 relative z-10">
-              <button
-                onClick={toggleLanguage}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-slate-300 bg-white/5 border border-white/10"
-              >
-                <TranslateIcon className="w-3.5 h-3.5" />
-                <span>{isEn ? 'English' : 'Indonesia'}</span>
-              </button>
+            <div className="pt-2.5 border-t border-white/10 flex flex-col gap-2 relative z-10">
+              <div className="flex items-center p-1 rounded-xl bg-white/5 border border-white/10 gap-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLang('id_lang');
+                    setMobileMenuOpen(false);
+                  }}
+                  className={cn(
+                    'flex-1 py-2 rounded-lg text-xs font-bold transition-all text-center flex items-center justify-center gap-1.5',
+                    !isEn ? 'bg-[#a6f30d] text-black font-black shadow-sm' : 'text-slate-400 hover:text-white'
+                  )}
+                >
+                  <TranslateIcon className="w-3.5 h-3.5" />
+                  <span>Bahasa Indonesia (ID)</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLang('en');
+                    setMobileMenuOpen(false);
+                  }}
+                  className={cn(
+                    'flex-1 py-2 rounded-lg text-xs font-bold transition-all text-center flex items-center justify-center gap-1.5',
+                    isEn ? 'bg-[#a6f30d] text-black font-black shadow-sm' : 'text-slate-400 hover:text-white'
+                  )}
+                >
+                  <TranslateIcon className="w-3.5 h-3.5" />
+                  <span>English (EN)</span>
+                </button>
+              </div>
 
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase border border-white/15 bg-white/5 hover:bg-white/10 text-white transition-colors flex-1"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold tracking-wider uppercase border border-white/15 bg-white/5 hover:bg-white/10 text-white transition-colors"
               >
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.9)]" />
-                <span>AVAILABLE</span>
+                <span>{isEn ? 'AVAILABLE' : 'TERSEDIA'}</span>
               </a>
             </div>
           </motion.div>
